@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --primary-color: #047AF8;
+    --secondary-color: #F8F7F1;
+    --headingFont: "Outfit", sans-serif;
+    --paraFont: "Urbanist", sans-serif;
+}
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/src/assets/landingpage/Section - Hero Section.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-section {
+    width: 100%;
+    height: 80vh;
+    background-image: url('/src/assets/aboutpage/Section - Hero Section.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn-button {
+    padding: 8px 24px;
+    font-family: var(--headingFont);
+    font-size: 16px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.btn-button:hover {
+    transition: all ease-in 0.4s;
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.fadeUp {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+.fadeUpDelay1 {
+    animation-delay: 0.2s;
+}
+
+.fadeUpDelay2 {
+    animation-delay: 0.5s;
+}
+
+
+.fadeUpDelay3 {
+    animation-delay: 0.7s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
