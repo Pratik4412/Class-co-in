@@ -38,6 +38,15 @@ body {
     background-repeat: no-repeat;
 }
 
+.our-section {
+    width: 100%;
+    height: 80vh;
+    background-image: url('/src/assets/our-services/hero section.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .btn-button {
     padding: 8px 24px;
     font-family: var(--headingFont);
