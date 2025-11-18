@@ -3,6 +3,7 @@ import App from "../App";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import OurServices from "../pages/OurServices";
+import TeamsMember from "../components/TeamsMember";
 const router = createBrowserRouter([
   {
     path: "",
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <OurServices />,
+      },
+      {
+        path: "/teams",
+        element: <TeamsMember />,
       },
     ],
   },

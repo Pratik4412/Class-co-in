@@ -12,6 +12,10 @@ export const navbar_items = [
     lable: "Services",
   },
   {
+    path: "/teams",
+    lable: "Team",
+  },
+  {
     path: "/contact",
     lable: "Contact",
   },

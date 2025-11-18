@@ -10,7 +10,7 @@ const HomeAbout = () => {
         <h1
           data-aos="fade-up"
           data-aos-delay="150"
-          className="text-2xl md:text-4xl lg:text-5xl font-semibold text-[#01254A] font-headingFont"
+          className="text-2xl md:text-4xl lg:text-5xl font-semibold text-black font-headingFont"
         >
           About Summary Section
         </h1>

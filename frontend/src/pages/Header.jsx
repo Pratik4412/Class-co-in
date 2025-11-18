@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 
-        ${scrolled ? "bg-white shadow-md py-1 " : "bg-transparent py-2"}
+        ${scrolled ? "bg-[#8a5b47] shadow-md py-1 " : "bg-transparent py-2"}
       `}
     >
       <div className="container mx-auto px-5 md:px-10 lg:px-20 bg-transparent w-[100%] flex items-center justify-between gap-6 z-50">
@@ -33,7 +33,7 @@ const Header = () => {
         <div>
           <ul
             className={`hidden md:flex items-center gap-8 transition-all duration-300 
-            ${scrolled ? "text-black" : "text-white"}
+            // ${scrolled ? "text-white" : "text-white"}
           `}
           >
             {navbar_items.map((item, i) => (
@@ -67,7 +67,7 @@ const Header = () => {
               ? "opacity-100 translate-y-0"
               : "opacity-0 -translate-y-5 pointer-events-none"
           }
-          ${scrolled ? "bg-white" : "bg-black/90"}
+          ${scrolled ? "bg-white" : "bg-white/90"}
         `}
         >
           <ul className="flex flex-col gap-4 px-6 py-4">
@@ -75,7 +75,7 @@ const Header = () => {
               <a href={item.path} key={i} onClick={() => setOpenMenu(false)}>
                 <li
                   className={`py-2 text-lg ${
-                    scrolled ? "text-black" : "text-white"
+                    scrolled ? "text-white" : "text-white"
                   } border-b border-white/10`}
                 >
                   {item.lable}

@@ -5,7 +5,7 @@ import { BiCurrentLocation } from "react-icons/bi";
 import { BiRevision } from "react-icons/bi";
 const Vision = () => {
   return (
-    <div className="bg-[#EEF7FB]">
+    <div className="bg-primary-50">
       <div className="container mx-auto px-5 md:px-10 lg:px-20 flex flex-col gap-6 md:gap-10 lg:gap-20 py-6 md:py-10 lg:py-20">
         <div className="flex text-start md:items-center gap-6 md:gap-10 flex-col md:flex-row">
           <div className="flex flex-col gap-6">
@@ -19,11 +19,11 @@ const Vision = () => {
             </p>
             <div className="flex items-center flex-col md:flex-row gap-4 md:gap-6 ">
               <div className="bg-white shadow-xl p-6 rounded-xl flex flex-col gap-4">
-                <span className="text-[#044383]">
+                <span className="text-primary-color">
                   <BiCurrentLocation size={32} />
                 </span>
                 <h3 className="text-xl font-headingFont font-semibold ">
-                  Our <span className="text-[#044383]">Mission</span>{" "}
+                  Our <span className="text-primary-color">Mission</span>{" "}
                 </h3>
                 <p className="text-base font-paraFont text-gray-600">
                   To be recognized as a trusted leader in professional services
@@ -32,11 +32,11 @@ const Vision = () => {
                 </p>
               </div>
               <div className="bg-white shadow-xl p-6 rounded-xl flex flex-col gap-4">
-                <span className="text-[#044383]">
+                <span className="text-primary-color">
                   <BiRevision size={32} />
                 </span>
                 <h3 className="text-xl font-headingFont font-semibold ">
-                  Our <span className="text-[#044383]">Vision</span>
+                  Our <span className="text-primary-color">Vision</span>
                 </h3>
                 <p className="text-base font-paraFont text-gray-600">
                   To turn knowledge into value for the benefit of our clients

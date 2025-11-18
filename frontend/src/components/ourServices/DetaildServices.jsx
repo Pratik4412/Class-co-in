@@ -16,7 +16,7 @@ const DetaildServices = () => {
               key={i}
               data-aos="fade-up"
               data-aos-delay={i * 150}
-              className="group flex items-center flex-col gap-3 shadow-lg bg-white hover:bg-primary-color transition-all rounded-xl p-10 "
+              className="group flex items-center flex-col gap-3 shadow-lg bg-white hover:bg-primary-400 transition-all rounded-xl p-10 "
             >
               <h1 className="text-lg md:text-2xl font-paraFont font-semibold group-hover:text-white">
                 {item.title}

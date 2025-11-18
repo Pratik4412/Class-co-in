@@ -2,7 +2,7 @@ import React from "react";
 
 const OurApproach = () => {
   return (
-    <div className="bg-[#ECF5FF] py-20">
+    <div className="bg-primary-50 py-20">
       <div className="container mx-auto px-5 md:px-10 lg:px-20 flex items-center flex-col md:flex-row gap-11">
         <div className="w-full flex items-start gap-5 flex-col">
           <h1 className="text-2xl md:text-4xl lg:text-5xl text-center md:text-start font-semibold text-[#01254A]">
