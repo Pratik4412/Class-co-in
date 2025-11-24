@@ -3,6 +3,7 @@ import ourPromi from "../../assets/aboutpage/Image 2Block → About Image.png";
 import ourValues from "../../assets/aboutpage/Core Values - visual selection 1.png";
 import { BiCurrentLocation } from "react-icons/bi";
 import { BiRevision } from "react-icons/bi";
+import TeamSize from "./TeamSize";
 const Vision = () => {
   return (
     <div className="bg-primary-50">
@@ -47,6 +48,7 @@ const Vision = () => {
           </div>
           <img src={ourPromi} alt="" />
         </div>
+        <TeamSize />
         <div className="flex items-center gap-8 flex-col ">
           <h1 className="text-2xl md:text-4xl lg:text-5xl text-center md:text-start font-semibold text-[#01254A]">
             Our values

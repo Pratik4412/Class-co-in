@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import logo from "../assets/header-logo.png";
 import { navbar_items } from "../data/text";
 import { FiMenu, FiX } from "react-icons/fi";
+import { HashLink } from "react-router-hash-link";
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
@@ -37,19 +38,32 @@ const Header = () => {
           `}
           >
             {navbar_items.map((item, i) => (
-              <a href={item.path}>
+              // <a href={item.path}>
+              //   <li
+              //     className={`
+              //     relative cursor-pointer font-medium
+              //     after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0
+              //     after:bg-current after:transition-all after:duration-300
+              //     hover:after:w-full
+              //     ${activePath === item.path ? "after:w-full" : ""}
+              //   `}
+              //   >
+              //     {item.lable}
+              //   </li>
+              // </a>
+              <HashLink smooth to={item.path}>
                 <li
                   className={`
-                  relative cursor-pointer font-medium
-                  after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 
-                  after:bg-current after:transition-all after:duration-300
-                  hover:after:w-full
-                  ${activePath === item.path ? "after:w-full" : ""}
-                `}
+      relative cursor-pointer font-medium
+      after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 
+      after:bg-current after:transition-all after:duration-300
+      hover:after:w-full
+      ${activePath === item.path ? "after:w-full" : ""}
+    `}
                 >
                   {item.lable}
                 </li>
-              </a>
+              </HashLink>
             ))}
           </ul>
           <button
@@ -72,15 +86,29 @@ const Header = () => {
         >
           <ul className="flex flex-col gap-4 px-6 py-4">
             {navbar_items.map((item, i) => (
-              <a href={item.path} key={i} onClick={() => setOpenMenu(false)}>
+              // <a href={item.path} key={i} onClick={() => setOpenMenu(false)}>
+              //   <li
+              //     className={`py-2 text-lg ${
+              //       scrolled ? "text-white" : "text-white"
+              //     } border-b border-white/10`}
+              //   >
+              //     {item.lable}
+              //   </li>
+              // </a>
+              <HashLink
+                smooth
+                to={item.path}
+                key={i}
+                onClick={() => setOpenMenu(false)}
+              >
                 <li
                   className={`py-2 text-lg ${
-                    scrolled ? "text-white" : "text-white"
+                    scrolled ? "text-black" : "text-black"
                   } border-b border-white/10`}
                 >
                   {item.lable}
                 </li>
-              </a>
+              </HashLink>
             ))}
           </ul>
         </div>

@@ -21,10 +21,6 @@ const router = createBrowserRouter([
         path: "/services",
         element: <OurServices />,
       },
-      {
-        path: "/teams",
-        element: <TeamsMember />,
-      },
     ],
   },
 ]);

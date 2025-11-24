@@ -1,3 +1,9 @@
+import gautam_gokhale from "../assets/aboutpage/gautam-gokhale.jpeg";
+import lm_agarwal from "../assets/aboutpage/lm-agarwal.jpeg";
+import pd_goyal from "../assets/aboutpage/pd-goyal.jpeg";
+import priyanka_shah from "../assets/aboutpage/priyanka-shah.jpeg";
+import rasik_chaturvedi from "../assets/aboutpage/rasik-chaturvedi.jpeg";
+import sachin_sarawagi from "../assets/aboutpage/sachin-sarawagi.jpeg";
 export const navbar_items = [
   {
     path: "/",
@@ -12,11 +18,7 @@ export const navbar_items = [
     lable: "Services",
   },
   {
-    path: "/teams",
-    lable: "Team",
-  },
-  {
-    path: "/contact",
+    path: "#contact-form",
     lable: "Contact",
   },
 ];
@@ -82,5 +84,32 @@ export const ourServicesContent = [
     title: "Forensic & Investigation",
     description:
       "Vestibulum congue metus quis accumsan euismod. Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.",
+  },
+];
+
+export const teamImage = [
+  {
+    name: "Gautam Gokhale",
+    image: gautam_gokhale,
+  },
+  {
+    name: "L M Agarwal",
+    image: lm_agarwal,
+  },
+  {
+    name: "P D Goyal",
+    image: pd_goyal,
+  },
+  {
+    name: "Priyanka Shah",
+    image: priyanka_shah,
+  },
+  {
+    name: "Rasik Chaturvedi",
+    image: rasik_chaturvedi,
+  },
+  {
+    name: "Sachin Sarawagi",
+    image: sachin_sarawagi,
   },
 ];

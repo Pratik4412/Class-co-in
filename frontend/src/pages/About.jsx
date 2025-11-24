@@ -22,7 +22,7 @@ function About() {
       </div>
       <WhoWeAre />
       <OurApproach />
-      <OurPromise />
+      <OurPromise />  
       <Vision />
     </div>
   );

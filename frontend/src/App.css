@@ -50,7 +50,7 @@ body {
 .our-section {
     width: 100%;
     height: 80vh;
-    background-image: url('/src/assets/our-services/hero section.png');
+    background-image: url('/src/assets/our-services/aerial-view-business-team.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,6 +65,15 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 
+}
+
+.footer-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/class-co.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .btn-button {

@@ -1,9 +1,9 @@
 import React from "react";
-import contactImge from "../assets/Desktop.png";
+import contactImge from "../assets/Desktop1.jpg";
 const Contact = () => {
   return (
     // <div className="b">
-    <div className="container mx-auto px-5 md:px-10 lg:px-20 py-6 flex flex-col gap-8">
+    <div className="container mx-auto px-5 md:px-10 lg:px-20 py-6 flex flex-col gap-8" id="contact-form">
       <div className="text-center flex flex-col gap-4 justify-center items-center">
         <h1 className="text-2xl md:text-4xl lg:text-5xl md:text-start font-semibold text-[#01254A]">
           Get in touch with us
