@@ -14,7 +14,7 @@ const Vision = () => {
               Driven by Vision.
               <br className="hidden md:block " /> Guided by Values.
             </h1>
-            <p className="text-lg md:text-xl font-gray-600 font-paraFont">
+            <p className="text-center md:text-start text-lg md:text-xl font-gray-600 font-paraFont">
               The foundation of CLASS & Co. LLP is built on purpose, principles,
               and professional excellence
             </p>

@@ -77,7 +77,7 @@ const StrenghtsO = () => {
       {/* LEFT CONTENT */}
       <div className="w-full md:w-1/3 flex flex-col gap-14">
         <div
-          className="flex flex-col gap-2 items-end text-right"
+          className="flex flex-col gap-2 items-center md:items-end text-center md:text-right"
           data-aos="fade-right"
           data-aos-delay="150"
           data-aos-duration="800"
@@ -91,7 +91,7 @@ const StrenghtsO = () => {
         </div>
 
         <div
-          className="flex flex-col gap-2 items-end text-right"
+          className="flex flex-col gap-2 items-center md:items-end text-center md:text-right"
           data-aos="fade-right"
           data-aos-delay="300"
           data-aos-duration="800"
@@ -126,7 +126,7 @@ const StrenghtsO = () => {
       {/* RIGHT CONTENT */}
       <div className="w-full md:w-1/3 flex flex-col gap-14">
         <div
-          className="flex flex-col gap-2 items-start text-left"
+          className="flex flex-col gap-2 text-center md:text-start"
           data-aos="fade-left"
           data-aos-delay="150"
           data-aos-duration="800"
@@ -140,7 +140,7 @@ const StrenghtsO = () => {
         </div>
 
         <div
-          className="flex flex-col gap-2 items-start text-left"
+          className="flex flex-col gap-2 text-center md:text-start"
           data-aos="fade-left"
           data-aos-delay="300"
           data-aos-duration="800"

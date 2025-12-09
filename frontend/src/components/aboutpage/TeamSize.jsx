@@ -96,7 +96,15 @@ const TeamSize = () => {
 
       {/* ================= MOBILE CAROUSEL ================= */}
       <div className="block lg:hidden">
-        <Swiper spaceBetween={20} slidesPerView={1.1} centeredSlides>
+        <Swiper
+          spaceBetween={20}
+          slidesPerView={1.1}
+          centeredSlides
+          navigation={{
+            nextEl: ".custom-next",
+            prevEl: ".custom-prev",
+          }}
+        >
           {teamImage.map((team, i) => (
             <SwiperSlide key={i}>
               <div
@@ -127,6 +135,14 @@ const TeamSize = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex gap-4">
+          <button className="custom-prev bg-primary-color text-white  w-10 h-10 flex items-center justify-center rounded-full text-[16px]">
+            &#8592;
+          </button>
+          <button className="custom-next bg-primary-color text-white  w-10 h-10 flex items-center justify-center rounded-full text-[16px]">
+            &#8594;
+          </button>
+        </div>
       </div>
 
       {/* ================= DESKTOP GRID ================= */}

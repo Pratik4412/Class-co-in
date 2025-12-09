@@ -81,56 +81,67 @@ const Footer = () => {
               Accountancy firm providing audit, taxation, and advisory services.
             </p>
           </div>
+          <div className="flex items-start justify-between gap-6 w-full">
+            {/* NAVIGATION */}
+            <div className="flex flex-col gap-4">
+              <h1 className="text-lg font-headingFont font-semibold">
+                Navigate
+              </h1>
+              <ul className="flex flex-col gap-2 text-sm text-white/90">
+                <Link to="/">
+                  <li className="hover:text-white transition cursor-pointer">
+                    Home
+                  </li>
+                </Link>
+                <Link to="/about">
+                  <li className="hover:text-white transition cursor-pointer">
+                    About Us
+                  </li>
+                </Link>
+                <Link to="/services">
+                  <li className="hover:text-white transition cursor-pointer">
+                    Services
+                  </li>
+                </Link>
+                <Link to="/contact-us">
+                  <li className="hover:text-white transition cursor-pointer">
+                    Contact Us
+                  </li>
+                </Link>
+              </ul>
+            </div>
 
-          {/* NAVIGATION */}
-          <div className="flex flex-col gap-4">
-            <h1 className="text-lg font-headingFont font-semibold">Navigate</h1>
-            <ul className="flex flex-col gap-2 text-sm text-white/90">
-              <li className="hover:text-white transition cursor-pointer">
-                Home
-              </li>
-              <li className="hover:text-white transition cursor-pointer">
-                About Us
-              </li>
-              <li className="hover:text-white transition cursor-pointer">
-                Services
-              </li>
-              <li className="hover:text-white transition cursor-pointer">
-                Contact Us
-              </li>
-            </ul>
+            {/* LEGAL */}
+            <div className="flex flex-col gap-4">
+              <h1 className="text-lg font-headingFont font-semibold">Legal</h1>
+              <ul className="flex flex-col gap-2 text-sm text-white/90">
+                <Link to="/privacy-policy">
+                  <li className="hover:text-white transition cursor-pointer">
+                    Privacy Policy
+                  </li>
+                </Link>
+
+                <Link to="/terms-of-service">
+                  <li className="hover:text-white transition cursor-pointer">
+                    Terms & Conditions
+                  </li>
+                </Link>
+
+                <Link to="/legal-disclaimer">
+                  <li className="hover:text-white transition cursor-pointer">
+                    Legal Disclaimer
+                  </li>
+                </Link>
+              </ul>
+            </div>
           </div>
 
-          {/* LEGAL */}
-          <div className="flex flex-col gap-4">
-            <h1 className="text-lg font-headingFont font-semibold">Legal</h1>
-            <ul className="flex flex-col gap-2 text-sm text-white/90">
-              <Link to="/privacy-policy">
-                <li className="hover:text-white transition cursor-pointer">
-                  Privacy Policy
-                </li>
-              </Link>
-
-              <Link to="/terms-of-service">
-                <li className="hover:text-white transition cursor-pointer">
-                  Terms & Conditions
-                </li>
-              </Link>
-
-              <Link to="/legal-disclaimer">
-                <li className="hover:text-white transition cursor-pointer">
-                  Legal Disclaimer
-                </li>
-              </Link>
-            </ul>
-
-            <div className="mt-4">
-              <img
-                src={Ca_log}
-                alt="CA Certification"
-                className="bg-white p-2 rounded-lg w-[140px]"
-              />
-            </div>
+          <div className="mt-4">
+            <img
+              src={Ca_log}
+              alt="CA Certification"
+              className="bg-white p-2 rounded-lg w-[140px]"
+            />
           </div>
         </div>
 

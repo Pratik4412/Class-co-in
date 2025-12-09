@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const navigate = useNavigate();
   return (
-    <div className="flex flex-col gap-16">
+    <div className="flex flex-col gap-8 md:gap-16">
       <div className="hero-section">
         <div className="px-5 md:px-10 lg:px-20 py-6 md:py-10 bg-[rgba(0,0,0,0.3)] w-full h-full ">
           <div className="container mx-auto flex items-center justify-center flex-col gap-12 w-full h-full">

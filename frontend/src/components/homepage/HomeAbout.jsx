@@ -79,7 +79,7 @@ const HomeAbout = () => {
           data-aos="fade-up"
           data-aos-delay="150"
           data-aos-duration="800"
-          className="text-2xl md:text-4xl lg:text-5xl font-semibold text-black font-headingFont leading-tight"
+          className="text-center md:text-start text-2xl md:text-4xl lg:text-5xl font-semibold text-black font-headingFont leading-tight"
         >
           About Summary Section
         </h1>
@@ -88,13 +88,13 @@ const HomeAbout = () => {
           data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="800"
-          className="text-base md:text-lg lg:text-xl font-paraFont text-gray-600 leading-relaxed"
+          className="text-center md:text-start text-base md:text-lg lg:text-xl font-paraFont text-gray-600 leading-relaxed"
         >
           Established in 1984, CLASS & Co. LLP is a Mumbai-based Chartered
           Accountancy firm providing audit, taxation, and advisory services.
         </p>
 
-        <div data-aos="fade-up" data-aos-delay="450" data-aos-duration="800">
+        <div data-aos="fade-up" data-aos-delay="450" data-aos-duration="800" className="flex items-center justify-center md:justify-start">
           <button
             onClick={() => navigate("/about")}
             className="
