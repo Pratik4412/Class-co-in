@@ -127,7 +127,8 @@ const StrenghtsO = () => {
       <div className="w-full md:w-1/3 flex flex-col gap-14">
         <div
           className="flex flex-col gap-2 text-center md:text-start"
-          data-aos="fade-left"
+          // data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-delay="150"
           data-aos-duration="800"
         >
@@ -141,7 +142,8 @@ const StrenghtsO = () => {
 
         <div
           className="flex flex-col gap-2 text-center md:text-start"
-          data-aos="fade-left"
+          // data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="800"
         >

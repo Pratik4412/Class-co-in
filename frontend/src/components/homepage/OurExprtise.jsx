@@ -131,7 +131,8 @@ const OurExprtise = () => {
           {/* CARD 2 */}
           <div className="flex justify-start w-full">
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
+              // data-aos="fade-left"
               data-aos-delay="200"
               className="
                 w-full sm:w-[420px]
@@ -180,7 +181,8 @@ const OurExprtise = () => {
           {/* CARD 4 */}
           <div className="flex justify-start w-full">
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
+              // data-aos="fade-left"
               data-aos-delay="400"
               className="
                 w-full sm:w-[420px]

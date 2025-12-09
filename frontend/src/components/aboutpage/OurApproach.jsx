@@ -20,7 +20,8 @@ const OurApproach = () => {
           <div className="flex flex-col gap-10">
             <div className="flex justify-end w-full">
               <div
-                data-aos="fade-right"
+                data-aos="fade-up"
+                // data-aos="fade-left"
                 data-aos-delay="150"
                 className="w-[460px] flex items-start flex-col gap-2 py-6 px-8 bg-white rounded-lg"
               >
@@ -31,7 +32,8 @@ const OurApproach = () => {
             </div>
             <div className="flex justify-start ">
               <div
-                data-aos="fade-left"
+                data-aos="fade-up"
+                // data-aos="fade-left"
                 data-aos-delay="150"
                 className="w-[460px] flex items-start flex-col gap-2 py-6 px-8 bg-primary-color rounded-lg"
               >
@@ -42,7 +44,8 @@ const OurApproach = () => {
             </div>
             <div className="flex justify-end w-full">
               <div
-                data-aos="fade-right"
+                data-aos="fade-up"
+                // data-aos="fade-left"
                 data-aos-delay="150"
                 className="w-[460px] flex items-start flex-col gap-2 py-6 px-8 bg-white rounded-lg"
               >

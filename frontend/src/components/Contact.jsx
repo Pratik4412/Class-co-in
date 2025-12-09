@@ -135,7 +135,8 @@ const Contact = () => {
             flex flex-col gap-6 w-full md:w-1/2
             shadow-xl
           "
-          data-aos="fade-left"
+          data-aos="fade-up"
+          // data-aos="fade-left"
           data-aos-delay="200"
         >
           <form className="flex flex-col gap-6">
