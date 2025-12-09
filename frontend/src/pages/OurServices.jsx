@@ -5,7 +5,7 @@ import OverviewSa from "../components/ourServices/OverviewSa";
 
 const OurServices = () => {
   return (
-    <div className="flex flex-col gap-24">
+    <div className="flex flex-col">
       <div className="our-section px-5 md:px-10 lg:px-20 py-6">
         <div className="container mx-auto flex items-center justify-center flex-col gap-12 w-full h-full">
           <div className="flex items-center flex-col gap-4">
@@ -20,7 +20,6 @@ const OurServices = () => {
         </div>
       </div>
       <DetaildServices />
-      <BussinessSupport />
       <OverviewSa />
     </div>
   );

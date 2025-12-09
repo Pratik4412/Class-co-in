@@ -15,7 +15,7 @@ const OurApproach = () => {
             and a genuine understanding of each client's business.
           </p>
         </div>
-        
+
         <div className="w-full">
           <div className="flex flex-col gap-10">
             <div className="flex justify-end w-full">

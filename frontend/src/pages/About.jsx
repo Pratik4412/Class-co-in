@@ -6,7 +6,7 @@ import Vision from "../components/aboutpage/Vision";
 
 function About() {
   return (
-    <div className="flex flex-col gap-24">
+    <div className="flex flex-col gap-14">
       <div className="about-section px-5 md:px-10 lg:px-20 py-6">
         <div className="container mx-auto flex items-center justify-center flex-col gap-12 w-full h-full">
           <div className="flex items-center flex-col gap-4">
@@ -25,7 +25,12 @@ function About() {
       <OurPromise />  
       <Vision />
     </div>
-  );
+  );  
 }
 
 export default About;
+
+
+
+
+

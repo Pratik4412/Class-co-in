@@ -4,6 +4,10 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import OurServices from "../pages/OurServices";
 import TeamsMember from "../components/TeamsMember";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
+import TeamsAndConditions from "../pages/TeamsAndConditions";
+import LegalDisclaimer from "../pages/LegalDisclaimer";
+import ContactUs from "../pages/ContactUs";
 const router = createBrowserRouter([
   {
     path: "",
@@ -20,6 +24,22 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <OurServices />,
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUs />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "/terms-of-service",
+        element: <TeamsAndConditions />,
+      },
+      {
+        path: "/legal-disclaimer",
+        element: <LegalDisclaimer />,
       },
     ],
   },
