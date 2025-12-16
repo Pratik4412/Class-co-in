@@ -3,7 +3,6 @@ import App from "../App";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import OurServices from "../pages/OurServices";
-import TeamsMember from "../components/TeamsMember";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import TeamsAndConditions from "../pages/TeamsAndConditions";
 import LegalDisclaimer from "../pages/LegalDisclaimer";

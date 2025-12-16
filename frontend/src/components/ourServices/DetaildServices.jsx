@@ -47,7 +47,17 @@ const DetailedServices = () => {
                   data-aos-delay={index * 50}
                   className="bg-white rounded-xl shadow-md h-[180px] p-6 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
                 >
-                  <div className="text-4xl mb-3">{item.icon}</div>
+                  <span
+                    className="
+            bg-primary-color w-20 h-20 rounded-full
+            flex items-center justify-center text-white text-3xl
+            transition-all duration-500
+            group-hover:rotate-6 group-hover:scale-110
+            shadow-lg
+          "
+                  >
+                    {item.icon}
+                  </span>
                   <h4 className="text-lg font-semibold text-gray-800">
                     {item.title}
                   </h4>
@@ -73,9 +83,19 @@ const DetailedServices = () => {
               key={index}
               data-aos="fade-up"
               data-aos-delay={index * 100}
-              className="bg-white rounded-xl shadow-md p-6 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              className="bg-white rounded-xl shadow-md p-6 flex items-center flex-col gap-2 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             >
-              <div className="text-4xl mb-3">{item.icon}</div>
+              <span
+                className="
+            bg-primary-color w-16 h-16 rounded-full
+            flex items-center justify-center text-white text-3xl
+            transition-all duration-500
+            group-hover:rotate-6 group-hover:scale-110
+            shadow-lg
+          "
+              >
+                {item.icon}
+              </span>
               <h4 className="text-lg font-semibold text-gray-800">
                 {item.title}
               </h4>

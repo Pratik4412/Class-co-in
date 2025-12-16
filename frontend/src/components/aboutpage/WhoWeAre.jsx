@@ -1,12 +1,12 @@
 import React from "react";
-import whoAre from "../../assets/aboutpage/Image Block → About Image.png";
+import whoAre from "../../assets/aboutpage/who-we-are.webp";
 const WhoWeAre = () => {
   return (
     <div>
       <div className="container mx-auto px-5 md:px-10 lg:px-20 flex flex-col gap-8">
         <div className="md:relative flex flex-col gap-4">
           <div className="flex md:items-start flex-col md:flex-row text-start gap-5 md:gap-10 ">
-            <img src={whoAre} alt="whoAre" />
+            <img src={whoAre} alt="whoAre" className="rounded-2xl" />
             <div className="flex flex-col gap-6 py-5">
               <h1 className="text-center md:text-start text-2xl md:text-4xl lg:text-5xl font-semibold text-[#01254A]">
                 Who We Are

@@ -5,10 +5,33 @@ import priyanka_shah from "../assets/aboutpage/priyanka-shah.png";
 import rasik_chaturvedi from "../assets/aboutpage/rasik-chaturvedi.png";
 import sachin_sarawagi from "../assets/aboutpage/sachin-sarawagi.png";
 import { AiOutlineAudit } from "react-icons/ai";
-import { MdReceiptLong } from "react-icons/md";
+import {
+  MdReceiptLong,
+  MdOutlineLocalPharmacy,
+  MdMovieEdit,
+  MdOutlineEngineering,
+  MdOutlineCastForEducation,
+  MdImportExport,
+  MdOutlineShoppingCartCheckout,
+  MdOutlineRealEstateAgent,
+  MdPrecisionManufacturing,
+  MdOutlineAddBusiness,
+} from "react-icons/md";
 import { FaMoneyBillTrendUp } from "react-icons/fa6";
-import { FaRegHandshake, FaSearchDollar } from "react-icons/fa";
-import { RiFileCheckLine } from "react-icons/ri";
+import {
+  FaRegHandshake,
+  FaSearchDollar,
+  FaHandsHelping,
+  FaHandshake,
+  FaUserTie,
+} from "react-icons/fa";
+import { RiFileCheckLine, RiBankLine } from "react-icons/ri";
+import { GrTechnology, GrServices } from "react-icons/gr";
+import { TbSubmarine } from "react-icons/tb";
+import { FiTruck } from "react-icons/fi";
+import { LiaIndustrySolid } from "react-icons/lia";
+import { GiChemicalDrop } from "react-icons/gi";
+import { BsPersonCheck } from "react-icons/bs";
 export const navbar_items = [
   {
     path: "/",
@@ -144,26 +167,26 @@ export const teamImage = [
 ];
 
 export const services = [
-  { title: "Information Technology", icon: "💻" },
-  { title: "Pharmaceuticals & Healthcare", icon: "🏥" },
-  { title: "Engineering & Infrastructure", icon: "🏗️" },
-  { title: "Education Sector", icon: "🎓" },
-  { title: "Banking & Financial Services", icon: "🏦" },
-  { title: "Import & Export", icon: "🚢" },
-  { title: "E-Commerce & Retail", icon: "🛒" },
-  { title: "Real Estate", icon: "🏠" },
-  { title: "Vessels & Marine", icon: "⚓" },
-  { title: "Logistics Services", icon: "🚚" },
-  { title: "Automobile Industry", icon: "🚗" },
-  { title: "Media & Entertainment", icon: "🎬" },
-  { title: "Manufacturing & Trading", icon: "🏭" },
-  { title: "Non-Profit Organisations", icon: "🤝" },
-  { title: "Chemicals Sector", icon: "🧪" },
-  { title: "HNI Services", icon: "💼" },
-  { title: "NRI Client Advisory", icon: "🌍" },
-  { title: "Individual Tax Advisory", icon: "📊" },
-  { title: "Self-Employed Professionals", icon: "👨‍💼" },
-  { title: "MSME Businesses", icon: "🏪" },
+  { title: "Information Technology", icon: <GrTechnology /> },
+  { title: "Pharmaceuticals & Healthcare", icon: <MdOutlineLocalPharmacy /> },
+  { title: "Engineering & Infrastructure", icon: <MdOutlineEngineering /> },
+  { title: "Education Sector", icon: <MdOutlineCastForEducation /> },
+  { title: "Banking & Financial Services", icon: <RiBankLine /> },
+  { title: "Import & Export", icon: <MdImportExport /> },
+  { title: "E-Commerce & Retail", icon: <MdOutlineShoppingCartCheckout /> },
+  { title: "Real Estate", icon: <MdOutlineRealEstateAgent /> },
+  { title: "Vessels & Marine", icon: <TbSubmarine /> },
+  { title: "Logistics Services", icon: <FiTruck /> },
+  { title: "Automobile Industry", icon: <LiaIndustrySolid /> },
+  { title: "Media & Entertainment", icon: <MdMovieEdit /> },
+  { title: "Manufacturing & Trading", icon: <MdPrecisionManufacturing /> },
+  { title: "Non-Profit Organisations", icon: <FaHandsHelping /> },
+  { title: "Chemicals Sector", icon: <GiChemicalDrop /> },
+  { title: "HNI Services", icon: <GrServices /> },
+  { title: "NRI Client Advisory", icon: <FaHandshake /> },
+  { title: "Individual Tax Advisory", icon: <BsPersonCheck /> },
+  { title: "Self-Employed Professionals", icon: <FaUserTie /> },
+  { title: "MSME Businesses", icon: <MdOutlineAddBusiness /> },
 ];
 
 export const servicesPage = [

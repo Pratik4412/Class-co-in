@@ -32,7 +32,7 @@ body {
 .hero-section {
     width: 100%;
     height: 90vh;
-    background-image: url('/src/assets/landingpage/Section - Hero Section.png');
+    background-image: url('/src/assets/landingpage/home-page-banner.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,7 +41,7 @@ body {
 .about-section {
     width: 100%;
     height: 80vh;
-    background-image: url('/src/assets/aboutpage/Section - Hero Section.png');
+    background-image: url('/src/assets/aboutpage/about-us-banner.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,17 +50,18 @@ body {
 .our-section {
     width: 100%;
     height: 80vh;
-    background-image: url('/src/assets/our-services/aerial-view-business-team.jpg');
+    background-image: url('/src/assets/our-services/our-services.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+/*  */
 
 .team-section {
     width: 100%;
     height: 80vh;
-    background-image: url('/src/assets/landingpage/team.jpg');
+    background-image: url('/src/assets/contact-us1.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

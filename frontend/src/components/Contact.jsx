@@ -1,94 +1,59 @@
-// import React from "react";
-// import contactImge from "../assets/Desktop1.jpg";
-// const Contact = () => {
-//   return (
-//     // <div className="b">
-//     <div className="container mx-auto px-5 md:px-10 lg:px-20 py-6 flex flex-col gap-8" id="contact-form">
-//       <div className="text-center flex flex-col gap-4 justify-center items-center">
-//         <h1 className="text-2xl md:text-4xl lg:text-5xl md:text-start font-semibold text-[#01254A]">
-//           Get in touch with us
-//         </h1>
-//         <p className="text-sm md:text-xl font-paraFont ">
-//           We would love to hear from you! Whether you have questions, need a
-//           <br className="hidden md:block " />
-//           quote, or want to schedule a service, our team is here to help.
-//         </p>
-//       </div>
-//       <div className="flex flex-col md:flex-row items-start gap-10 w-full h-full">
-//         {/* <div className="w-full h-full"> */}
-//         <img
-//           src={contactImge}
-//           alt="contactImge"
-//           className="w-full  rounded-xl object-contain md:h-[490px]"
-//         />
-//         {/* </div> */}
-//         <div className="bg-secondary-color p-4 md:p-10 rounded-2xl flex flex-col gap-6 w-full h-full">
-//           <form className="flex flex-col gap-6">
-//             <div className="flex flex-col md:flex-row items-center gap-3">
-//               <input
-//                 type="text"
-//                 name="fname"
-//                 id="fname"
-//                 placeholder="First Name"
-//                 className="w-full text-sm font-headingFont font-semibold py-3 px-4 rounded-md outline-none"
-//               />
-//               <input
-//                 type="text"
-//                 name="lname"
-//                 id="lname"
-//                 placeholder="Last Name"
-//                 className="w-full text-sm font-headingFont font-semibold py-3 px-4 rounded-md outline-none"
-//               />
-//             </div>
-//             <input
-//               type="email"
-//               name="email"
-//               id="email"
-//               placeholder="Email"
-//               className="w-full text-sm font-headingFont font-semibold py-3 px-4 rounded-md outline-none"
-//             />
-//             <select
-//               className="text-sm font-headingFont font-semibold py-3 px-3  rounded-md outline-none"
-//               placeholder="Select services"
-//             >
-//               <option disabled selected>
-//                 service
-//               </option>
-//               <option value="services">services1</option>
-//               <option value="services">services2</option>
-//               <option value="services">services3</option>
-//               <option value="services">services4</option>
-//             </select>
-//             <textarea
-//               name=""
-//               id=""
-//               placeholder="Discription"
-//               className="text-sm font-headingFont font-semibold py-3 px-4 h-20 rounded-md outline-none resize-none "
-//             ></textarea>
-//             <label
-//               htmlFor="check"
-//               className="text-xs md:text-sm font-paraFont font-semibold flex items-start md:items-center gap-2"
-//             >
-//               <input type="checkbox" id="check" />I agree that my submitted data
-//               is being collected and stored.
-//             </label>
-//           </form>
-//           <button className="py-2 md:py-3 px-3 md:px-4 bg-primary-color rounded-lg text-white w-full ">
-//             Send Message
-//           </button>
-//         </div>
-//       </div>
-//       {/* </div> */}
-//     </div>
-//   );
-// };
-
-// export default Contact;
-
-import React from "react";
-import contactImge from "../assets/Desktop1.jpg";
+import React, { useState } from "react";
+import contactImge from "../assets/contact-us.webp";
+import toast from "react-hot-toast";
+import { sendContactMail } from "../api/mailApi.js";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    fname: "",
+    lname: "",
+    email: "",
+    service: "",
+    message: "",
+    agree: false,
+  });
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === "checkbox" ? checked : value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!formData.agree) {
+      toast.error("Please accept terms & conditions");
+      return;
+    }
+
+    try {
+      setLoading(true);
+      const res = await sendContactMail(formData);
+
+      if (res.success) {
+        toast.success("Message sent successfully!");
+
+        setFormData({
+          fname: "",
+          lname: "",
+          email: "",
+          service: "",
+          message: "",
+          agree: false,
+        });
+      } else {
+        toast.error("Failed to send message");
+      }
+    } catch (error) {
+      toast.error(error.message || "Server error. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <div
       className="container mx-auto px-5 md:px-10 lg:px-20 py-20 flex flex-col gap-12"
@@ -108,9 +73,7 @@ const Contact = () => {
         </p>
       </div>
 
-      {/* CONTENT */}
       <div className="flex flex-col md:flex-row items-center gap-14 w-full">
-        {/* IMAGE */}
         <div
           className="w-full md:w-1/2 flex justify-center"
           data-aos="zoom-in"
@@ -120,7 +83,7 @@ const Contact = () => {
             src={contactImge}
             alt="contact"
             className="
-              w-full sm:w-[90%] lg:w-[460px]
+              w-full sm:w-[90%] lg:w-[500px]
               h-auto object-cover rounded-2xl
               shadow-xl transition-all duration-700
               hover:scale-105 hover:shadow-2xl
@@ -139,12 +102,15 @@ const Contact = () => {
           // data-aos="fade-left"
           data-aos-delay="200"
         >
-          <form className="flex flex-col gap-6">
+          <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
             <div className="flex flex-col md:flex-row items-center gap-4">
               <input
                 type="text"
                 name="fname"
+                value={formData.fname}
+                onChange={handleChange}
                 placeholder="First Name"
+                required
                 className="
                   w-full text-sm font-headingFont font-semibold
                   py-3 px-4 rounded-md outline-none
@@ -154,7 +120,10 @@ const Contact = () => {
               <input
                 type="text"
                 name="lname"
+                value={formData.lname}
+                onChange={handleChange}
                 placeholder="Last Name"
+                required
                 className="
                   w-full text-sm font-headingFont font-semibold
                   py-3 px-4 rounded-md outline-none
@@ -166,7 +135,10 @@ const Contact = () => {
             <input
               type="email"
               name="email"
+              value={formData.email}
+              onChange={handleChange}
               placeholder="Email"
+              required
               className="
                 w-full text-sm font-headingFont font-semibold
                 py-3 px-4 rounded-md outline-none
@@ -175,6 +147,10 @@ const Contact = () => {
             />
 
             <select
+              name="service"
+              value={formData.service}
+              onChange={handleChange}
+              required
               className="
     text-sm font-headingFont font-semibold
     py-3 px-4 rounded-md outline-none
@@ -208,7 +184,11 @@ const Contact = () => {
             </select>
 
             <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
               placeholder="Description"
+              required
               className="
                 text-sm font-headingFont font-semibold
                 py-3 px-4 h-24 rounded-md outline-none resize-none
@@ -220,22 +200,33 @@ const Contact = () => {
               htmlFor="check"
               className="text-xs md:text-sm font-paraFont font-semibold flex items-start gap-2 text-gray-700"
             >
-              <input type="checkbox" id="check" className="mt-1" />I agree that
-              my submitted data is being collected and stored.
+              <input
+                type="checkbox"
+                name="agree"
+                checked={formData.agree}
+                onChange={handleChange}
+                id="check"
+                className="mt-1"
+              />
+              I agree that my submitted data is being collected and stored.
             </label>
+            <button
+              type="submit"
+              disabled={loading}
+              className={`
+    py-3 rounded-lg text-white w-full
+    font-semibold tracking-wide
+    transition-all duration-500
+    ${
+      loading
+        ? "bg-gray-400 cursor-not-allowed"
+        : "bg-primary-color hover:shadow-xl hover:-translate-y-1 active:scale-95"
+    }
+  `}
+            >
+              {loading ? "Sending..." : "Send Message"}
+            </button>
           </form>
-
-          <button
-            className="
-              py-3 bg-primary-color rounded-lg text-white w-full
-              font-semibold tracking-wide
-              transition-all duration-500
-              hover:shadow-xl hover:-translate-y-1
-              active:scale-95
-            "
-          >
-            Send Message
-          </button>
         </div>
       </div>
     </div>

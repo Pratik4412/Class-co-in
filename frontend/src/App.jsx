@@ -7,7 +7,7 @@ import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Contact from "./components/Contact";
-
+import { Toaster } from "react-hot-toast";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -22,6 +22,13 @@ function App() {
         <ScrollToTop />
         <Outlet />
       </main>
+      <Toaster
+        position="top-right"
+        reverseOrder={false}
+        toastOptions={{
+          duration: 3000,
+        }}
+      />
       <Contact />
       <Footer />
     </div>
