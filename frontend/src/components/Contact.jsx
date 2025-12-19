@@ -64,10 +64,10 @@ const Contact = () => {
         className="text-center flex flex-col gap-4 justify-center items-center"
         data-aos="fade-up"
       >
-        <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-[#01254A]">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold   bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)]   bg-clip-text text-transparent">
           Get in touch with us
         </h1>
-        <p className="text-sm md:text-xl font-paraFont text-gray-600 max-w-2xl">
+        <p className="text-sm md:text-xl font-paraFont text-gray-300 max-w-2xl">
           We would love to hear from you! Whether you have questions, need a
           quote, or want to schedule a service, our team is here to help.
         </p>
@@ -94,7 +94,7 @@ const Contact = () => {
         {/* FORM */}
         <div
           className="
-            bg-secondary-color p-6 md:p-10 rounded-2xl
+            bg-[#281F1C] p-6 md:p-10 rounded-2xl
             flex flex-col gap-6 w-full md:w-1/2
             shadow-xl
           "
@@ -114,7 +114,7 @@ const Contact = () => {
                 className="
                   w-full text-sm font-headingFont font-semibold
                   py-3 px-4 rounded-md outline-none
-                  focus:ring-2 focus:ring-primary-color
+                  focus:ring-2 focus:ring-primary-color 
                 "
               />
               <input
@@ -127,7 +127,7 @@ const Contact = () => {
                 className="
                   w-full text-sm font-headingFont font-semibold
                   py-3 px-4 rounded-md outline-none
-                  focus:ring-2 focus:ring-primary-color
+                  focus:ring-2 focus:ring-primary-color 
                 "
               />
             </div>
@@ -142,7 +142,7 @@ const Contact = () => {
               className="
                 w-full text-sm font-headingFont font-semibold
                 py-3 px-4 rounded-md outline-none
-                focus:ring-2 focus:ring-primary-color
+                focus:ring-2 focus:ring-primary-color 
               "
             />
 
@@ -154,7 +154,7 @@ const Contact = () => {
               className="
     text-sm font-headingFont font-semibold
     py-3 px-4 rounded-md outline-none
-    focus:ring-2 focus:ring-primary-color
+    focus:ring-2 focus:ring-primary-color 
   "
             >
               <option disabled selected>
@@ -192,7 +192,7 @@ const Contact = () => {
               className="
                 text-sm font-headingFont font-semibold
                 py-3 px-4 h-24 rounded-md outline-none resize-none
-                focus:ring-2 focus:ring-primary-color
+                focus:ring-2 focus:ring-primary-color 
               "
             ></textarea>
 

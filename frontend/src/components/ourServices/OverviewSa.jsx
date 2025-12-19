@@ -88,7 +88,7 @@ import { servicesPage } from "../../data/text";
 
 const OverviewSa = () => {
   return (
-    <section className="bg-[var(--secondary-color)] py-20">
+    <section className="bg-secondary-50 py-20">
       <div className="container mx-auto px-5 md:px-10 lg:px-20">
         {/* Title */}
         <div className="text-center mb-16" data-aos="fade-up">

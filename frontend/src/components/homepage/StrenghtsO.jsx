@@ -82,11 +82,15 @@ const StrenghtsO = () => {
           data-aos-delay="150"
           data-aos-duration="800"
         >
-          <h1 className="text-xl md:text-2xl font-headingFont font-semibold">
+          <h1
+            className="text-xl md:text-2xl font-heading font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)]
+    bg-clip-text text-transparent"
+          >
             Versatility
           </h1>
-          <p className="text-base md:text-lg font-paraFont text-gray-600 max-w-sm">
-            Ready to tackle challenges and seize opportunities
+          <p className="text-base md:text-lg font-para text-gray-300 max-w-sm">
+            Adaptive solutions designed to meet evolving business and regulatory
+            needs across sectors.
           </p>
         </div>
 
@@ -96,11 +100,15 @@ const StrenghtsO = () => {
           data-aos-delay="300"
           data-aos-duration="800"
         >
-          <h1 className="text-xl md:text-2xl font-headingFont font-semibold">
+          <h1
+            className="text-xl md:text-2xl font-heading font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)]
+    bg-clip-text text-transparent"
+          >
             Leadership
           </h1>
-          <p className="text-base md:text-lg font-paraFont text-gray-600 max-w-sm">
-            Positioned as a leader in its field
+          <p className="text-base md:text-lg font-para text-gray-300 max-w-sm">
+            Strategic guidance backed by experience, insight, and a strong
+            ethical foundation.
           </p>
         </div>
       </div>
@@ -132,11 +140,15 @@ const StrenghtsO = () => {
           data-aos-delay="150"
           data-aos-duration="800"
         >
-          <h1 className="text-xl md:text-2xl font-headingFont font-semibold">
+          <h1
+            className="text-xl md:text-2xl font-heading font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)]
+    bg-clip-text text-transparent"
+          >
             Legacy
           </h1>
-          <p className="text-base md:text-lg font-paraFont text-gray-600 max-w-sm">
-            Over 40 years of experience
+          <p className="text-base md:text-lg font-para text-gray-300 max-w-sm">
+            A legacy built on trust, consistency, and long-standing client
+            relationships.
           </p>
         </div>
 
@@ -147,11 +159,15 @@ const StrenghtsO = () => {
           data-aos-delay="300"
           data-aos-duration="800"
         >
-          <h1 className="text-xl md:text-2xl font-headingFont font-semibold">
+          <h1
+            className="text-xl md:text-2xl font-heading font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)]
+    bg-clip-text text-transparent"
+          >
             Multi-Industry Expertise
           </h1>
-          <p className="text-base md:text-lg font-paraFont text-gray-600 max-w-sm">
-            Partnerships in 6 industries
+          <p className="text-base md:text-lg font-para text-gray-300 max-w-sm">
+            Proven expertise across manufacturing, services, infrastructure, and
+            emerging industries.
           </p>
         </div>
       </div>

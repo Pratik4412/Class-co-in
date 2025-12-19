@@ -52,37 +52,37 @@ export const navbar_items = [
 ];
 export const servicesContent = [
   {
-    icons: <AiOutlineAudit size={38} />,
+    icons: <AiOutlineAudit size={38} className="icon-gradient" />,
     title: "Audit & Assurance",
     description:
       "Vestibulum congue metus quis accumsan euismod. Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.",
   },
   {
-    icons: <MdReceiptLong size={38} />,
+    icons: <MdReceiptLong size={38} className="icon-gradient" />,
     title: "Taxation",
     description:
       "Vestibulum congue metus quis accumsan euismod. Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.",
   },
   {
-    icons: <FaMoneyBillTrendUp size={38} />,
+    icons: <FaMoneyBillTrendUp size={38} className="icon-gradient" />,
     title: "Corporate Finance",
     description:
       "Vestibulum congue metus quis accumsan euismod. Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.",
   },
   {
-    icons: <FaRegHandshake size={38} />,
+    icons: <FaRegHandshake size={38} className="icon-gradient" />,
     title: "Business Advisory",
     description:
       "Vestibulum congue metus quis accumsan euismod. Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.",
   },
   {
-    icons: <RiFileCheckLine size={38} />,
+    icons: <RiFileCheckLine size={38} className="icon-gradient" />,
     title: "FEMA & RBI Compliance",
     description:
       "Vestibulum congue metus quis accumsan euismod. Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.",
   },
   {
-    icons: <FaSearchDollar size={38} />,
+    icons: <FaSearchDollar size={38} className="icon-gradient" />,
     title: "Forensic & Investigation",
     description:
       "Vestibulum congue metus quis accumsan euismod. Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.",
