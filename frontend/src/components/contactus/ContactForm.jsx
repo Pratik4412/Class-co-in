@@ -3,28 +3,45 @@ import React from "react";
 function ContactForm() {
   return (
     <div className="container mx-auto px-5 md:px-10 lg:px-20">
-      <form className="bg-white shadow-lg rounded-xl p-6 md:p-10 flex flex-col gap-5">
-        <h3 className="text-2xl font-semibold text-center font-headingFont">
+      <form className="bg-[#281F1C] shadow-lg rounded-xl p-6 md:p-10 flex flex-col gap-5">
+        <h3 className="text-2xl font-semibold text-center font-headingFont text-white">
           Send Us a Message
         </h3>
 
         <input
-          className="border p-3 rounded-lg"
+          className="
+                  w-full text-sm font-headingFont font-semibold
+                  py-3 px-4 rounded-md outline-none
+                  focus:ring-2 focus:ring-secondary-color  
+                "
           type="text"
           placeholder="Your Name"
         />
         <input
-          className="border p-3 rounded-lg"
+          className="
+                  w-full text-sm font-headingFont font-semibold
+                  py-3 px-4 rounded-md outline-none
+                  focus:ring-2 focus:ring-secondary-color  
+                "
           type="email"
           placeholder="Your Email"
         />
         <input
-          className="border p-3 rounded-lg"
+          className="
+                  w-full text-sm font-headingFont font-semibold
+                  py-3 px-4 rounded-md outline-none
+                  focus:ring-2 focus:ring-secondary-color  
+                "
           type="text"
           placeholder="Subject"
         />
         <textarea
-          className="border p-3 rounded-lg h-32"
+          className="
+          resize-none
+                  w-full text-sm font-headingFont font-semibold
+                  py-3 px-4 rounded-md outline-none
+                  focus:ring-2 focus:ring-secondary-color  
+                "
           placeholder="Your Message"
         ></textarea>
 

@@ -3,28 +3,31 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 function ContactDetails() {
   return (
-    <div className="container mx-auto px-5 md:px-10 lg:px-20 flex flex-col gap-6">
-      <h2 className="text-2xl md:text-3xl font-bold font-headingFont text-center">
+    <div className="container mx-auto px-5 md:px-10 lg:px-20 flex flex-col gap-10">
+      <h1
+        className="text-2xl md:text-4xl text-center lg:text-5xl font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)]
+    bg-clip-text text-transparent"
+      >
         Get In Touch
-      </h2>
+      </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
         <div className="flex flex-col items-center gap-2">
-          <FaPhone size={28} className="text-primaryColor" />
-          <h4 className="font-semibold">Phone</h4>
-          <p>+91 98765 43210</p>
+          <FaPhone size={28} className="text-secondary-color " />
+          <h4 className="font-semibold text-white">Phone</h4>
+          <p className="text-gray-300">+91 98765 43210</p>
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <FaEnvelope size={28} className="text-primaryColor" />
-          <h4 className="font-semibold">Email</h4>
-          <p>info@classandco.com</p>
+          <FaEnvelope size={28} className="text-secondary-color " />
+          <h4 className="font-semibold text-white">Email</h4>
+          <p className="text-gray-300">info@classandco.com</p>
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <FaMapMarkerAlt size={28} className="text-primaryColor" />
-          <h4 className="font-semibold">Office Address</h4>
-          <p>Mumbai, Maharashtra - 400001</p>
+          <FaMapMarkerAlt size={28} className="text-secondary-color " />
+          <h4 className="font-semibold text-white">Office Address</h4>
+          <p className="text-gray-300">Mumbai, Maharashtra - 400001</p>
         </div>
       </div>
     </div>

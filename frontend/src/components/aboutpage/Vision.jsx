@@ -19,27 +19,27 @@ const Vision = () => {
               and professional excellence
             </p>
             <div className="flex items-center flex-col md:flex-row gap-4 md:gap-6 ">
-              <div className="bg-white shadow-xl p-6 rounded-xl flex flex-col gap-4">
-                <span className="text-primary-color">
+              <div className="bg-[#281F1C] shadow-xl p-6 rounded-xl flex flex-col gap-4">
+                <span className="text-secondary-color">
                   <BiCurrentLocation size={32} />
                 </span>
-                <h3 className="text-xl font-headingFont font-semibold ">
-                  Our <span className="text-primary-color">Mission</span>{" "}
+                <h3 className="text-xl font-headingFont font-semibold text-white">
+                  Our <span className="text-secondary-color">Mission</span>{" "}
                 </h3>
-                <p className="text-base font-paraFont text-gray-600">
+                <p className="text-base font-paraFont text-gray-300">
                   To be recognized as a trusted leader in professional services
                   by maintaining integrity, accuracy, and client satisfaction at
                   all times.
                 </p>
               </div>
-              <div className="bg-white shadow-xl p-6 rounded-xl flex flex-col gap-4">
-                <span className="text-primary-color">
+              <div className="bg-[#281F1C] shadow-xl p-6 rounded-xl flex flex-col gap-4">
+                <span className="text-secondary-color">
                   <BiRevision size={32} />
                 </span>
-                <h3 className="text-xl font-headingFont font-semibold ">
-                  Our <span className="text-primary-color">Vision</span>
+                <h3 className="text-xl font-headingFont font-semibold text-white">
+                  Our <span className="text-secondary-color">Vision</span>
                 </h3>
-                <p className="text-base font-paraFont text-gray-600">
+                <p className="text-base font-paraFont text-gray-300">
                   To turn knowledge into value for the benefit of our clients
                   and continually strive for excellence in everything we do.
                 </p>

@@ -35,7 +35,7 @@ const Header = () => {
         <img
           src={logo}
           alt="Logo"
-          className={`w-[160px] transition-all duration-300 ${
+          className={`w-[200px] transition-all duration-300 ${
             scrolled ? "brightness-100" : "brightness-0 invert"
           }`}
         />

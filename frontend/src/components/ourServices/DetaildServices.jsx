@@ -16,13 +16,17 @@ const DetailedServices = () => {
   }, []);
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-[#180F0B]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12" data-aos="fade-up">
-          <h2 className="text-4xl font-bold text-gray-800">
+          <h2
+            className="text-2xl md:text-4xl lg:text-5xl font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)]
+    bg-clip-text text-transparent"
+          >
+            {" "}
             Businesses We Serve
           </h2>
-          <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-3 text-gray-300 max-w-2xl mx-auto">
             We provide specialized solutions across multiple industries with
             deep domain expertise.
           </p>
@@ -45,20 +49,12 @@ const DetailedServices = () => {
                 <div
                   data-aos="zoom-in"
                   data-aos-delay={index * 50}
-                  className="bg-white rounded-xl shadow-md h-[180px] p-6 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                  className="bg-[#281F1C] rounded-xl shadow-md h-[180px] p-6 text-center  hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col gap-3 justify-center items-center"
                 >
-                  <span
-                    className="
-            bg-primary-color w-20 h-20 rounded-full
-            flex items-center justify-center text-white text-3xl
-            transition-all duration-500
-            group-hover:rotate-6 group-hover:scale-110
-            shadow-lg
-          "
-                  >
+                  <span className="text-secondary-color w-20 h-20 flex items-center justify-center text-3xl bg-[rgba(0,0,0,0.5)] border border-[#805f3f] backdrop-blur-[12.5px] rounded-full rounded-b-none transition-all duration-500 group-hover:rotate-6 group-hover:scale-110 shadow-lg">
                     {item.icon}
                   </span>
-                  <h4 className="text-lg font-semibold text-gray-800">
+                  <h4 className="text-lg font-semibold text-gray-300">
                     {item.title}
                   </h4>
                 </div>
@@ -83,20 +79,12 @@ const DetailedServices = () => {
               key={index}
               data-aos="fade-up"
               data-aos-delay={index * 100}
-              className="bg-white rounded-xl shadow-md p-6 flex items-center flex-col gap-2 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              className="bg-[#281F1C] rounded-xl shadow-md p-6 flex items-center flex-col gap-2 text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             >
-              <span
-                className="
-            bg-primary-color w-16 h-16 rounded-full
-            flex items-center justify-center text-white text-3xl
-            transition-all duration-500
-            group-hover:rotate-6 group-hover:scale-110
-            shadow-lg
-          "
-              >
+              <span className="text-secondary-color w-20 h-20 flex items-center justify-center text-3xl bg-[rgba(0,0,0,0.5)] border border-[#805f3f] backdrop-blur-[12.5px] rounded-full rounded-b-none transition-all duration-500 group-hover:rotate-6 group-hover:scale-110 shadow-lg">
                 {item.icon}
               </span>
-              <h4 className="text-lg font-semibold text-gray-800">
+              <h4 className="text-lg font-semibold text-gray-300">
                 {item.title}
               </h4>
             </div>

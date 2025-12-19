@@ -198,7 +198,7 @@ const Contact = () => {
 
             <label
               htmlFor="check"
-              className="text-xs md:text-sm font-paraFont font-semibold flex items-start gap-2 text-gray-700"
+              className="text-xs md:text-sm font-paraFont font-semibold flex items-start gap-2 text-gray-300"
             >
               <input
                 type="checkbox"
@@ -206,7 +206,7 @@ const Contact = () => {
                 checked={formData.agree}
                 onChange={handleChange}
                 id="check"
-                className="mt-1"
+                className="mt-1 "
               />
               I agree that my submitted data is being collected and stored.
             </label>
