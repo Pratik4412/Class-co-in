@@ -1,139 +1,88 @@
-// import React from "react";
-// import { servicesPage } from "../../data/text";
-
-// const positionClasses = {
-//   "top-left": "top-0 left-[8%]",
-//   "top-right": "top-0 right-[8%]",
-//   left: "top-1/2 left-0 -translate-y-1/2",
-//   right: "top-1/2 right-0 -translate-y-1/2",
-//   "bottom-left": "bottom-0 left-[8%]",
-//   "bottom-right": "bottom-0 right-[8%]",
-//   "bottom-center": "bottom-0 left-1/2 -translate-x-1/2",
-// };
-
-// const OverviewSa = () => {
-//   return (
-//     <section className="bg-[var(--secondary-color)] py-20">
-//       <div className="container mx-auto px-5 md:px-10 lg:px-20">
-//         {/* Title */}
-//         <div className="text-center mb-20">
-//           <h2
-//             className="text-2xl md:text-4xl lg:text-5xl font-semibold text-[var(--primary-700)]"
-//             style={{ fontFamily: "var(--headingFont)" }}
-//           >
-//             Comprehensive Business Services Overview
-//           </h2>
-//           <p
-//             className="mt-4 max-w-2xl mx-auto text-[var(--primary-600)]"
-//             style={{ fontFamily: "var(--paraFont)" }}
-//           >
-//             A complete ecosystem of professional financial, advisory and
-//             compliance services for your business growth.
-//           </p>
-//         </div>
-
-//         {/* Diagram Area */}
-//         <div className="relative min-h-[750px] flex items-center justify-center">
-//           {/* Center Box */}
-//           <div
-//             className="z-10 bg-[var(--primary-50)] border border-[var(--primary-200)]
-//             rounded-2xl p-10 text-center shadow-lg"
-//           >
-//             <div className="text-4xl mb-3">👤</div>
-//             <h3
-//               className="text-xl font-semibold text-[var(--primary-700)]"
-//               style={{ fontFamily: "var(--headingFont)" }}
-//             >
-//               Business Services
-//             </h3>
-//           </div>
-
-//           {/* Service Nodes */}
-//           {servicesPage.map((item, index) => (
-//             <div
-//               key={index}
-//               className={`absolute ${positionClasses[item.position]}
-//               bg-white border border-[var(--primary-100)]
-//               w-64 rounded-2xl shadow-md p-5 transition-all
-//               hover:shadow-xl hover:-translate-y-1 duration-300`}
-//             >
-//               <div
-//                 className="flex items-center gap-2 mb-2 font-semibold
-//                 text-[var(--primary-700)]"
-//                 style={{ fontFamily: "var(--headingFont)" }}
-//               >
-//                 <span className="text-xl">{item.icon}</span>
-//                 {item.title}
-//               </div>
-
-//               <ul
-//                 className="text-sm text-[var(--primary-600)] space-y-1"
-//                 style={{ fontFamily: "var(--paraFont)" }}
-//               >
-//                 {item.points.map((point, i) => (
-//                   <li key={i}>• {point}</li>
-//                 ))}
-//               </ul>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default OverviewSa;
-import React from "react";
-import { servicesPage } from "../../data/text";
+import React, { useState } from "react";
+import { servicesTabs } from "../../data/text";
 
 const OverviewSa = () => {
+  const [activeTab, setActiveTab] = useState(0);
+
   return (
-    <section className="bg-secondary-50 py-20">
-      <div className="container mx-auto px-5 md:px-10 lg:px-20">
-        {/* Title */}
-        <div className="text-center mb-16" data-aos="fade-up">
-          <h2
-            className="text-2xl md:text-4xl lg:text-5xl font-semibold text-[var(--primary-700)]"
-            style={{ fontFamily: "var(--headingFont)" }}
-          >
+    <section className="bg-secondary-50 py-14 md:py-20">
+      <div className="container mx-auto px-4 sm:px-6 md:px-10 lg:px-20">
+        {/* Heading */}
+        <div className="text-center mb-10 md:mb-12">
+          <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-semibold text-[var(--primary-700)]">
             Comprehensive Business Services Overview
           </h2>
-          <p
-            className="mt-4 max-w-2xl mx-auto text-[var(--primary-600)]"
-            style={{ fontFamily: "var(--paraFont)" }}
-          >
+          <p className="mt-3 md:mt-4 max-w-2xl mx-auto text-sm sm:text-base text-[var(--primary-600)]">
             A complete ecosystem of professional financial, advisory and
             compliance services for your business growth.
           </p>
         </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {servicesPage.map((item, index) => (
-            <div
-              key={index}
-              data-aos="fade-up"
-              data-aos-delay={index * 120}
-              className="bg-white border border-[var(--primary-100)]
-              rounded-2xl shadow-md p-5 transition-all hover:shadow-xl
-              hover:-translate-y-1 duration-300 cursor-pointer"
-            >
-              <div
-                className="flex items-center gap-2 mb-3 font-semibold text-[var(--primary-700)]"
-                style={{ fontFamily: "var(--headingFont)" }}
-              >
-                {/* <span className="text-xl">{item.icon}</span> */}
-                {item.title}
-              </div>
 
-              <ul
-                className="text-sm text-[var(--primary-600)] space-y-1"
-                style={{ fontFamily: "var(--paraFont)" }}
+        {/* Tabs (Scrollable on Mobile) */}
+        <div className="relative mb-10 md:mb-12">
+          <div className="flex gap-3 overflow-x-auto scrollbar-hide px-1 sm:px-0 md:justify-center">
+            {servicesTabs.map((tab, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveTab(index)}
+                className={`whitespace-nowrap px-4 py-2 text-sm font-medium rounded-full transition-all
+                  ${
+                    activeTab === index
+                      ? "bg-[var(--primary-700)] text-white shadow-md"
+                      : "bg-white text-[var(--primary-600)] hover:bg-[var(--primary-50)]"
+                  }`}
               >
-                {item.points.map((point, i) => (
-                  <li key={i}>• {point}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+                {tab.title}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Tab Content */}
+        <div
+          data-aos="fade-up"
+          className="bg-white rounded-xl md:rounded-2xl shadow-lg
+          p-5 sm:p-6 md:p-8 max-w-4xl mx-auto"
+        >
+          <h3 className="text-xl md:text-2xl font-semibold text-[var(--primary-700)] mb-3 md:mb-4">
+            {servicesTabs[activeTab].title}
+          </h3>
+
+          <p className="mb-4 text-sm sm:text-base text-[var(--primary-600)]">
+            <strong>Overview:</strong> {servicesTabs[activeTab].overview}
+          </p>
+
+          <p className="mb-5 text-sm sm:text-base text-[var(--primary-600)]">
+            <strong>Why it matters:</strong> {servicesTabs[activeTab].why}
+          </p>
+
+          <div className="mb-5">
+            <h4 className="font-semibold text-[var(--primary-700)] mb-2">
+              Our services include:
+            </h4>
+            <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-[var(--primary-600)]">
+              {servicesTabs[activeTab].services.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </div>
+
+          <p className="mb-6 text-sm sm:text-base text-[var(--primary-600)]">
+            <strong>Who we serve:</strong> {servicesTabs[activeTab].serve}
+          </p>
+
+          {/* CTA */}
+          <button
+            className="
+              w-full md:w-auto
+              px-6 py-3 rounded-lg
+              bg-[var(--primary-700)] text-white
+              font-medium text-sm sm:text-base
+              hover:opacity-90 transition
+            "
+          >
+            {servicesTabs[activeTab].cta}
+          </button>
         </div>
       </div>
     </section>

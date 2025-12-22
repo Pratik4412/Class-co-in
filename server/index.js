@@ -15,6 +15,7 @@ app.use(
 app.use(express.json());
 
 app.use("/api/mail", require("./routes/mailRoutes"));
+app.use("/api", require("./routes/careerRoutes"));
 
 app.get("/", (req, res) => {
   res.send("Backend is running");

@@ -7,6 +7,7 @@ import PrivacyPolicy from "../pages/PrivacyPolicy";
 import TeamsAndConditions from "../pages/TeamsAndConditions";
 import LegalDisclaimer from "../pages/LegalDisclaimer";
 import ContactUs from "../pages/ContactUs";
+import Career from "../pages/Career";
 const router = createBrowserRouter([
   {
     path: "",
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/legal-disclaimer",
         element: <LegalDisclaimer />,
+      },
+      {
+        path: "/career",
+        element: <Career />,
       },
     ],
   },

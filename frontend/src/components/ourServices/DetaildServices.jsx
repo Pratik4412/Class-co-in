@@ -33,14 +33,29 @@ const DetailedServices = () => {
         </div>
 
         {/* =========== MOBILE CAROUSEL =========== */}
-        <div className="block lg:hidden relative pb-16 ">
+        <div className="relative pb-16">
           <Swiper
-            spaceBetween={20}
-            slidesPerView={1.2}
-            centeredSlides
+            spaceBetween={24}
+            centeredSlides={false}
             navigation={{
               nextEl: ".custom-next",
               prevEl: ".custom-prev",
+            }}
+            breakpoints={{
+              0: {
+                slidesPerView: 1.2,
+                centeredSlides: true,
+              },
+              640: {
+                slidesPerView: 2,
+                centeredSlides: false,
+              },
+              1024: {
+                slidesPerView: 3,
+              },
+              1280: {
+                slidesPerView: 4,
+              },
             }}
             modules={[Navigation]}
           >
@@ -48,12 +63,26 @@ const DetailedServices = () => {
               <SwiperSlide key={index}>
                 <div
                   data-aos="zoom-in"
-                  data-aos-delay={index * 50}
-                  className="bg-[#281F1C] rounded-xl shadow-md h-[180px] p-6 text-center  hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col gap-3 justify-center items-center"
+                  data-aos-delay={index * 80}
+                  className="
+            group bg-[#281F1C] rounded-xl shadow-md h-[190px] p-6
+            text-center flex flex-col gap-3 justify-center items-center
+            hover:shadow-xl hover:-translate-y-1 transition-all duration-300
+          "
                 >
-                  <span className="text-secondary-color w-20 h-20 flex items-center justify-center text-3xl bg-[rgba(0,0,0,0.5)] border border-[#805f3f] backdrop-blur-[12.5px] rounded-full rounded-b-none transition-all duration-500 group-hover:rotate-6 group-hover:scale-110 shadow-lg">
+                  <span
+                    className="
+              text-secondary-color w-20 h-20 flex items-center justify-center text-3xl
+              bg-[rgba(0,0,0,0.5)] border border-[#805f3f]
+              backdrop-blur-[12.5px] rounded-full rounded-b-none
+              transition-all duration-500
+              group-hover:rotate-6 group-hover:scale-110
+              shadow-lg
+            "
+                  >
                     {item.icon}
                   </span>
+
                   <h4 className="text-lg font-semibold text-gray-300">
                     {item.title}
                   </h4>
@@ -62,18 +91,19 @@ const DetailedServices = () => {
             ))}
           </Swiper>
 
+          {/* Navigation */}
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex gap-4">
-            <button className="custom-prev bg-primary-color text-white  w-10 h-10 flex items-center justify-center rounded-full text-[16px]">
+            <button className="custom-prev bg-primary-color text-white w-10 h-10 flex items-center justify-center rounded-full">
               &#8592;
             </button>
-            <button className="custom-next bg-primary-color text-white  w-10 h-10 flex items-center justify-center rounded-full text-[16px]">
+            <button className="custom-next bg-primary-color text-white w-10 h-10 flex items-center justify-center rounded-full">
               &#8594;
             </button>
           </div>
         </div>
 
         {/* =========== DESKTOP GRID =========== */}
-        <div className="hidden lg:grid grid-cols-3 xl:grid-cols-4 gap-6">
+        {/* <div className="hidden lg:grid grid-cols-3 xl:grid-cols-4 gap-6">
           {services.map((item, index) => (
             <div
               key={index}
@@ -89,7 +119,7 @@ const DetailedServices = () => {
               </h4>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "./pages/Header";
 import Footer from "./pages/Footer";
 import ScrollToTop from "./common/ScrollToTop";
@@ -8,28 +8,38 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Contact from "./components/Contact";
 import { Toaster } from "react-hot-toast";
+
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
     AOS.init({
       duration: 400,
       once: false,
     });
+    AOS.refresh();
   }, []);
+
+  const hideContact = location.pathname === "/career";
+
   return (
     <div>
       <Header />
+
       <main>
         <ScrollToTop />
         <Outlet />
       </main>
+
       <Toaster
         position="top-right"
         reverseOrder={false}
-        toastOptions={{
-          duration: 3000,
-        }}
+        toastOptions={{ duration: 3000 }}
       />
-      <Contact />
+
+      {/* Conditionally render Contact */}
+      {!hideContact && <Contact />}
+
       <Footer />
     </div>
   );

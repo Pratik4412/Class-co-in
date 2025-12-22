@@ -189,47 +189,144 @@ export const services = [
   { title: "MSME Businesses", icon: <MdOutlineAddBusiness /> },
 ];
 
-export const servicesPage = [
-  {
-    title: "Specialized Services",
-    icon: "🧠",
-    position: "top-left",
-    points: ["Insolvency", "Business Restructuring"],
-  },
-  {
-    title: "Business Support Services",
-    icon: "⭐",
-    position: "top-right",
-    points: ["Company Registration", "ROC Filings"],
-  },
-  {
-    title: "FEMA, RBI & FOREX Compliance",
-    icon: "🌍",
-    position: "left",
-    points: ["FDI Compliance", "RBI Filings"],
-  },
+// export const servicesPage = [
+//   {
+//     title: "Specialized Services",
+//     icon: "🧠",
+//     position: "top-left",
+//     points: ["Insolvency", "Business Restructuring"],
+//   },
+//   {
+//     title: "Business Support Services",
+//     icon: "⭐",
+//     position: "top-right",
+//     points: ["Company Registration", "ROC Filings"],
+//   },
+//   {
+//     title: "FEMA, RBI & FOREX Compliance",
+//     icon: "🌍",
+//     position: "left",
+//     points: ["FDI Compliance", "RBI Filings"],
+//   },
+//   {
+//     title: "Audit & Assurance",
+//     icon: "📘",
+//     position: "right",
+//     points: ["Statutory Audits", "Internal Audits"],
+//   },
+//   {
+//     title: "Business Advisory",
+//     icon: "💼",
+//     position: "bottom-left",
+//     points: ["Strategic Planning", "Risk Management"],
+//   },
+//   {
+//     title: "Taxation",
+//     icon: "🧾",
+//     position: "bottom-right",
+//     points: ["Direct Tax", "Indirect Tax"],
+//   },
+//   {
+//     title: "Corporate Finance",
+//     icon: "💰",
+//     position: "bottom-center",
+//     points: ["Project Reports", "Bank Finance"],
+//   },
+// ];
+
+// data/servicesTabs.js
+export const servicesTabs = [
   {
     title: "Audit & Assurance",
-    icon: "📘",
-    position: "right",
-    points: ["Statutory Audits", "Internal Audits"],
-  },
-  {
-    title: "Business Advisory",
-    icon: "💼",
-    position: "bottom-left",
-    points: ["Strategic Planning", "Risk Management"],
+    overview:
+      "Our Audit & Assurance services are designed to provide independent, objective assurance on financial information while strengthening internal controls and governance frameworks.",
+    why: "A well-conducted audit enhances credibility with investors, regulators, lenders, and other stakeholders while identifying risks and process gaps.",
+    services: [
+      "Statutory Audit",
+      "Internal Audit",
+      "Tax Audit",
+      "Management & Operational Audit",
+      "Due Diligence",
+      "Certification services",
+    ],
+    serve:
+      "Corporates, SMEs, startups, LLPs, trusts, and not-for-profit organizations.",
+    cta: "Talk to our Audit Experts",
   },
   {
     title: "Taxation",
-    icon: "🧾",
-    position: "bottom-right",
-    points: ["Direct Tax", "Indirect Tax"],
+    overview:
+      "We offer end-to-end taxation services covering advisory, compliance, and litigation support across direct and indirect taxes.",
+    why: "Effective tax planning ensures compliance while reducing exposure to penalties and unnecessary tax outflows.",
+    services: [
+      "Income Tax compliance & advisory",
+      "Corporate tax planning",
+      "GST registration, returns & audits",
+      "Tax assessments & representation",
+      "Advisory on tax structuring",
+    ],
+    serve: "Individuals, businesses, professionals, startups, and corporates.",
+    cta: "Get Expert Tax Advice",
   },
   {
     title: "Corporate Finance",
-    icon: "💰",
-    position: "bottom-center",
-    points: ["Project Reports", "Bank Finance"],
+    overview:
+      "Our Corporate Finance team helps businesses make informed financial decisions at every stage of growth.",
+    why: "Strategic financial planning enables sustainable growth, better capital allocation, and value creation.",
+    services: [
+      "Fundraising advisory (debt & equity)",
+      "Business & valuation services",
+      "Mergers & acquisitions advisory",
+      "Financial restructuring",
+      "Investor support & pitch readiness",
+    ],
+    serve: "Startups, growing businesses, and established enterprises.",
+    cta: "Discuss Your Financial Strategy",
+  },
+  {
+    title: "Business Advisory",
+    overview:
+      "We partner with businesses to provide practical, data-driven advisory focused on growth, efficiency, and risk management.",
+    why: "Businesses need more than compliance—they need insights that improve performance and decision-making.",
+    services: [
+      "Business structuring & restructuring",
+      "Financial planning & analysis",
+      "Process improvement",
+      "Risk assessment & mitigation",
+      "Strategic advisory",
+    ],
+    serve: "Entrepreneurs, SMEs, family-run businesses, and corporates.",
+    cta: "Partner With Us",
+  },
+  {
+    title: "FEMA & RBI Compliance",
+    overview:
+      "We provide specialized advisory and compliance services under FEMA and RBI regulations for cross-border transactions.",
+    why: "Non-compliance can result in severe penalties and regulatory scrutiny.",
+    services: [
+      "FDI & ODI advisory",
+      "ECB compliance",
+      "RBI reporting & filings",
+      "Cross-border transaction structuring",
+      "Liaison with regulators",
+    ],
+    serve:
+      "Indian companies, foreign entities, NRIs, and multinational businesses.",
+    cta: "Ensure FEMA Compliance",
+  },
+  {
+    title: "Forensic & Investigation",
+    overview:
+      "Our Forensic & Investigation services help identify, analyze, and resolve financial irregularities and disputes.",
+    why: "Early detection of fraud and financial misconduct minimizes losses and protects reputation.",
+    services: [
+      "Fraud investigation",
+      "Forensic accounting",
+      "Dispute resolution support",
+      "Litigation & arbitration support",
+      "Risk & fraud prevention reviews",
+    ],
+    serve: "Corporates, banks, legal firms, and regulatory bodies.",
+    cta: "Consult Forensic Specialists",
   },
 ];

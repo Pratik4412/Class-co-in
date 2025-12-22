@@ -1,6 +1,38 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import whoAre from "../../assets/aboutpage/who-we-are.webp";
 const WhoWeAre = () => {
+  const sectionRef = useRef(null);
+  const hasAnimated = useRef(false);
+  const [years, setYears] = useState(0);
+  const [clients, setClients] = useState(0);
+  const [experienced, setExperienced] = useState(0);
+
+  useEffect(() => {
+    const couter = (setter, end, speed) => {
+      let start = 0;
+      const interval = setInterval(() => {
+        start += 1;
+        setter(start);
+        if (start >= end) clearInterval(interval);
+      }, speed);
+    };
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated.current) {
+          hasAnimated.current = true;
+
+          couter(setYears, 40, 100);
+          couter(setClients, 500, 20);
+          couter(setExperienced, 6, 400);
+        }
+      },
+      { threshold: 0.4 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+
+    return () => observer.disconnect();
+  }, []);
   return (
     <div>
       <div className="container mx-auto px-5 md:px-10 lg:px-20 flex flex-col gap-8">
@@ -8,10 +40,18 @@ const WhoWeAre = () => {
           <div className="flex md:items-start flex-col md:flex-row text-start gap-5 md:gap-10 ">
             <img src={whoAre} alt="whoAre" className="rounded-2xl" />
             <div className="flex flex-col gap-6 py-5">
-              <h1 className="text-center md:text-start text-2xl md:text-4xl lg:text-5xl font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent">
+              <h1
+                data-aos="fade-up"
+                data-aos-duration="400"
+                className="text-center md:text-start text-2xl md:text-4xl lg:text-5xl font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent"
+              >
                 Who We Are
               </h1>
-              <p className="text-center md:text-start text-sm md:text-xl font-paraFont text-gray-300">
+              <p
+                data-aos="fade-up"
+                data-aos-duration="400"
+                className="text-center md:text-start text-sm md:text-xl font-paraFont text-gray-300"
+              >
                 M/s CLASS & Co. LLP (formerly Chaturvedi & Agrawal) is a
                 Mumbai-based Chartered Accountancy firm offering end-to-end
                 professional solutions — from audit and taxation to
@@ -21,10 +61,15 @@ const WhoWeAre = () => {
               </p>
             </div>
           </div>
-          <div className="bg-[#281F1C] shadow-lg md:absolute bottom-0 right-0 rounded-lg p-5 flex flex-col md:flex-row items-center gap-4 ">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="bg-[#281F1C] shadow-lg md:absolute bottom-0 right-0 rounded-lg p-5 flex flex-col md:flex-row items-center gap-4 "
+            ref={sectionRef}
+          >
             <div className="w-full md:w-fit flex flex-col gap-2">
               <h1 className=" text-center md:text-start text-2xl md:text-4xl lg:text-5xl font-semibold text-white">
-                40+
+                {years}+
               </h1>
               <p className=" text-center md:text-start text-base font-paraFont text-gray-300">
                 Years of Legacy
@@ -33,7 +78,7 @@ const WhoWeAre = () => {
             <div className="bg-gray-200 w-full md:w-[2px] h-[1px] md:h-[80px]"></div>
             <div className="w-full md:w-fit flex flex-col gap-2">
               <h1 className="text-center md:text-start text-2xl md:text-4xl lg:text-5xl font-semibold text-white">
-                500+
+                {clients}+
               </h1>
               <p className=" text-center md:text-start text-base font-paraFont text-gray-300">
                 Clients Served
@@ -42,7 +87,7 @@ const WhoWeAre = () => {
             <div className="bg-gray-200 w-full md:w-[2px] h-[1px] md:h-[80px]"></div>
             <div className="w-full md:w-fit flex flex-col gap-2">
               <h1 className=" text-center md:text-start text-2xl md:text-4xl lg:text-5xl font-semibold text-white">
-                6
+                {experienced}
               </h1>
               <p className=" text-center md:text-start text-base font-paraFont text-gray-300">
                 Experienced Partners

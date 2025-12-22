@@ -102,7 +102,10 @@ import React from "react";
 import logo from "../assets/header-logo.png";
 import Ca_log from "../assets/ca-logo.svg";
 import { Link } from "react-router-dom";
-
+import { CgFacebook } from "react-icons/cg";
+import { TbBrandYoutubeFilled } from "react-icons/tb";
+import { BiLogoInstagramAlt } from "react-icons/bi";
+import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="relative bg-gradient-to-b from-[#180F0B] to-primary-700 text-white overflow-hidden">
@@ -110,30 +113,32 @@ const Footer = () => {
       <div className="footer-bg absolute inset-0 opacity-10 md:block hidden"></div>
       <div className="absolute inset-0 bg-gold-gradient opacity-[0.04] pointer-events-none"></div>
 
-      <div className="relative container mx-auto px-5 md:px-10 lg:px-20 py-20">
+      <div className="relative container mx-auto px-5 md:px-10 lg:px-20 py-10">
         {/* MAIN GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="flex items-start flex-col md:flex-row gap-12">
           {/* BRAND */}
-          <div className="flex flex-col gap-5 md:col-span-2">
-            <img
+          <div className="w-full flex flex-col gap-5 md:col-span-2">
+            {/* <img
               src={logo}
               alt="CLASS & Co LLP"
               className="w-[180px] md:w-[240px]"
-            />
-
+            /> */}
             <p className="text-base font-paraFont leading-relaxed text-white/85 max-w-md">
               Established in 1984, CLASS & Co. LLP is a Mumbai-based Chartered
               Accountancy firm providing audit, taxation, compliance, and
               advisory services with integrity and excellence.
             </p>
+            <div className="bg-white/95 p-2 rounded-xl shadow-lg w-fit">
+              <img src={Ca_log} alt="CA Certification" className="w-[60px]" />
+            </div>
           </div>
 
           {/* LINKS */}
-          <div className="flex flex-col gap-10 md:flex-row md:gap-16">
+          <div className="w-full flex gap-10 md:flex-row md:gap-16">
             {/* NAVIGATION */}
-            <div className="flex flex-col gap-4">
+            <div className="w-full flex flex-col gap-4">
               <h3 className="text-lg font-headingFont font-semibold text-secondary-color">
-                Navigate
+                Links
               </h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {[
@@ -141,6 +146,7 @@ const Footer = () => {
                   { name: "About Us", path: "/about" },
                   { name: "Services", path: "/services" },
                   { name: "Contact Us", path: "/contact-us" },
+                  { name: "Cereer", path: "/career" },
                 ].map((item, i) => (
                   <Link key={i} to={item.path}>
                     <li className="text-white/80 hover:text-secondary-color transition">
@@ -152,9 +158,9 @@ const Footer = () => {
             </div>
 
             {/* LEGAL */}
-            <div className="flex flex-col gap-4">
+            <div className="w-full flex flex-col gap-4">
               <h3 className="text-lg font-headingFont font-semibold text-secondary-color">
-                Legal
+                Other
               </h3>
               <ul className="flex flex-col gap-2 text-sm">
                 {[
@@ -171,21 +177,34 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-
-          {/* CERTIFICATION */}
-          <div className="flex md:justify-end items-start">
-            <div className="bg-white/95 p-3 rounded-xl shadow-lg">
-              <img src={Ca_log} alt="CA Certification" className="w-[80px]" />
-            </div>
-          </div>
         </div>
 
         {/* DIVIDER */}
         <div className="mt-14 h-px bg-gradient-to-r from-transparent via-secondary-color/40 to-transparent"></div>
 
         {/* BOTTOM BAR */}
-        <div className="mt-6 text-center text-sm text-white/70 font-paraFont">
-          © {new Date().getFullYear()} CLASS & Co. LLP. All rights reserved.
+        <div className="mt-6 flex items-center flex-col md:flex-row gap-3 justify-between  text-sm text-white/70 font-paraFont">
+          <div>
+            © {new Date().getFullYear()} CLASS & Co. LLP. All rights reserved.{" "}
+          </div>
+
+          <div className="socialIcons flex gap-2">
+            <div className="bg-primary-800 cursor-pointer p-1.5 rounded-full flex items-center justify-center">
+              <CgFacebook className="text-white size-5" />
+            </div>
+            <div className="bg-primary-800 cursor-pointer p-1.5 rounded-full flex items-center justify-center">
+              <TbBrandYoutubeFilled className="text-white size-5" />
+            </div>
+            <div className="bg-primary-800 cursor-pointer p-1.5 rounded-full flex items-center justify-center">
+              <BiLogoInstagramAlt className="text-white size-5" />
+            </div>
+            <div className="bg-primary-800 cursor-pointer p-1.5 rounded-full flex items-center justify-center">
+              <FaLinkedinIn className="text-white size-5" />
+            </div>
+            <div className="bg-primary-800 cursor-pointer p-1.5 rounded-full flex items-center justify-center">
+              <FaXTwitter className="text-white size-5" />
+            </div>
+          </div>
         </div>
       </div>
     </footer>
