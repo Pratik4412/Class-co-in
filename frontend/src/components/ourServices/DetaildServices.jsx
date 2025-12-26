@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 
 // Swiper Imports
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -41,6 +41,11 @@ const DetailedServices = () => {
               nextEl: ".custom-next",
               prevEl: ".custom-prev",
             }}
+            autoplay={{
+              delay: 2000, // auto slide delay
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true, // 👈 stops on hover
+            }}
             breakpoints={{
               0: {
                 slidesPerView: 1.2,
@@ -57,7 +62,7 @@ const DetailedServices = () => {
                 slidesPerView: 4,
               },
             }}
-            modules={[Navigation]}
+            modules={[Navigation, Autoplay]}
           >
             {services.map((item, index) => (
               <SwiperSlide key={index}>
