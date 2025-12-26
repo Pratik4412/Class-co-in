@@ -24,7 +24,7 @@ const OurExprtise = () => {
 
           counter(setYears, 40, 100);
           counter(setIndustries, 6, 400);
-          counter(setEngagements, 500, 20);
+          counter(setEngagements, 500, 10);
         }
       },
       { threshold: 0.4 }

@@ -56,7 +56,7 @@ const Career = () => {
     drop-shadow-[0_2px_20px_rgba(255,202,151,0.35)]
   "
               >
-                Careers
+                Career
               </h1>
               <h6 className="fadeUp fadeUpDelay3 fadeUp text-base md:text-lg lg:text-xl font-semibold text-white font-paraFont">
                 We’re always open to connecting with talented professionals.

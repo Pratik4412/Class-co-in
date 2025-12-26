@@ -23,7 +23,7 @@ const WhoWeAre = () => {
           hasAnimated.current = true;
 
           couter(setYears, 40, 100);
-          couter(setClients, 500, 20);
+          couter(setClients, 500, 10);
           couter(setExperienced, 6, 400);
         }
       },

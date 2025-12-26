@@ -55,39 +55,40 @@ export const servicesContent = [
     icons: <AiOutlineAudit size={38} className="icon-gradient" />,
     title: "Audit & Assurance",
     description:
-      "Vestibulum congue metus quis accumsan euismod. Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.",
+      "We provide independent audit and assurance services to enhance financial transparency, accuracy, and regulatory compliance, helping businesses build trust with stakeholders.",
   },
   {
     icons: <MdReceiptLong size={38} className="icon-gradient" />,
     title: "Taxation",
     description:
-      "Vestibulum congue metus quis accumsan euismod. Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.",
+      "Our taxation services cover planning, compliance, and advisory to optimize tax efficiency while ensuring full adherence to applicable laws and regulations.",
   },
   {
     icons: <FaMoneyBillTrendUp size={38} className="icon-gradient" />,
     title: "Corporate Finance",
     description:
-      "Vestibulum congue metus quis accumsan euismod. Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.",
+      "We assist businesses with financial structuring, fundraising, valuations, and strategic transactions to support sustainable growth and informed decision-making.",
   },
   {
     icons: <FaRegHandshake size={38} className="icon-gradient" />,
     title: "Business Advisory",
     description:
-      "Vestibulum congue metus quis accumsan euismod. Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.",
+      "Our advisory services help organizations improve performance, manage risks, and implement effective strategies through practical and data-driven insights.",
   },
   {
     icons: <RiFileCheckLine size={38} className="icon-gradient" />,
     title: "FEMA & RBI Compliance",
     description:
-      "Vestibulum congue metus quis accumsan euismod. Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.",
+      "We ensure seamless compliance with FEMA and RBI regulations, assisting businesses in managing cross-border transactions and regulatory reporting requirements.",
   },
   {
     icons: <FaSearchDollar size={38} className="icon-gradient" />,
     title: "Forensic & Investigation",
     description:
-      "Vestibulum congue metus quis accumsan euismod. Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.",
+      "We conduct forensic audits and investigations to identify financial irregularities, fraud risks, and control gaps, supporting informed corrective actions.",
   },
 ];
+
 export const ourServicesContent = [
   {
     title: "Business Support Services",
