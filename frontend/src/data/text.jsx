@@ -1,9 +1,9 @@
 import gautam_gokhale from "../assets/aboutpage/gautam-gokhale.png";
-import lm_agarwal from "../assets/aboutpage/lm-agarwal.png";
+import lm_agarwal from "../assets/aboutpage/CA. L M Agrawal.png";
 import pd_goyal from "../assets/aboutpage/pd-goyal.png";
 import priyanka_shah from "../assets/aboutpage/priyanka-shah.png";
-import rasik_chaturvedi from "../assets/aboutpage/rasik-chaturvedi.png";
-import sachin_sarawagi from "../assets/aboutpage/sachin-sarawagi.png";
+import rasik_chaturvedi from "../assets/aboutpage/CA. Rasik Chaturvedi.png";
+import sachin_sarawagi from "../assets/aboutpage/Sachin Sarawagi.png";
 import { AiOutlineAudit } from "react-icons/ai";
 import {
   MdReceiptLong,
@@ -124,7 +124,21 @@ export const ourServicesContent = [
 
 export const teamImage = [
   {
-    name: "CA. Purshottam Das Goyal (FCA)",
+    name: "CA. L M Agrawal",
+    designation: "Partner",
+    image: lm_agarwal,
+    description:
+      "44+ years of post-qualification experience. Specialist in Indian & International Taxation, audits, tax litigation & financial structuring.",
+  },
+  {
+    name: "CA. Rasik Chaturvedi",
+    designation: "Partner",
+    image: rasik_chaturvedi,
+    description:
+      "25+ years of industry leadership and 14+ years in professional practice. Specialist in finance, taxation, compliance & corporate consulting.",
+  },
+  {
+    name: "CA. Purshottam Das Goyal",
     designation: "Founder Partner",
     image: pd_goyal,
     description:
@@ -150,20 +164,6 @@ export const teamImage = [
     image: sachin_sarawagi,
     description:
       "Expert in taxation consultancy, statutory & internal audits, and risk-based audit systems. Known for governance & compliance frameworks.",
-  },
-  {
-    name: "CA. Rasik Chaturvedi (FCA)",
-    designation: "Partner",
-    image: rasik_chaturvedi,
-    description:
-      "25+ years of industry leadership and 14+ years in professional practice. Specialist in finance, taxation, compliance & corporate consulting.",
-  },
-  {
-    name: "CA. Laxminarayan Agarwal (FCA)",
-    designation: "Partner",
-    image: lm_agarwal,
-    description:
-      "44+ years of post-qualification experience. Specialist in Indian & International Taxation, audits, tax litigation & financial structuring.",
   },
 ];
 

@@ -124,9 +124,10 @@ const Footer = () => {
               className="w-[180px] md:w-[240px]"
             /> */}
             <p className="text-base font-paraFont leading-relaxed text-white/85 max-w-md">
-              Established in 1984, CLASS & Co. LLP is a Mumbai-based Chartered
-              Accountancy firm providing audit, taxation, compliance, and
-              advisory services with integrity and excellence.
+              C L A S S & Co. LLP is a firm of Chartered Accountants committed
+              to delivering reliable, ethical, and forward-looking professional
+              solutions. We partner with businesses to navigate compliance,
+              financial clarity, and sustainable growth with confidence.
             </p>
             <div className="bg-white/95 p-2 rounded-xl shadow-lg w-fit">
               <img src={Ca_log} alt="CA Certification" className="w-[60px]" />
@@ -146,7 +147,7 @@ const Footer = () => {
                   { name: "About Us", path: "/about" },
                   { name: "Services", path: "/services" },
                   { name: "Contact Us", path: "/contact-us" },
-                  { name: "Cereer", path: "/career" },
+                  { name: "Career", path: "/career" },
                 ].map((item, i) => (
                   <Link key={i} to={item.path}>
                     <li className="text-white/80 hover:text-secondary-color transition">
@@ -185,7 +186,8 @@ const Footer = () => {
         {/* BOTTOM BAR */}
         <div className="mt-6 flex items-center flex-col md:flex-row gap-3 justify-between  text-sm text-white/70 font-paraFont">
           <div>
-            © {new Date().getFullYear()} CLASS & Co. LLP. All rights reserved.{" "}
+            © {new Date().getFullYear()} C L A S S & Co. LLP. All rights
+            reserved.{" "}
           </div>
 
           <div className="socialIcons flex gap-2">

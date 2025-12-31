@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/header-logo.png";
+import logo from "../assets/class-logo-new.png";
 import { navbar_items } from "../data/text";
 import { FiMenu, FiX } from "react-icons/fi";
 import { HashLink } from "react-router-hash-link";

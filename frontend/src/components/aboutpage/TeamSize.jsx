@@ -17,7 +17,7 @@ const TeamSize = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-12 py-8 md:py-20">
+    <div className="flex flex-col gap-12 ">
       {/* Heading */}
       <div className="w-full flex items-center gap-2 flex-col text-center">
         <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-[#01254A] font-headingFont">

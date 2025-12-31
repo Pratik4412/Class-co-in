@@ -52,12 +52,12 @@ const WhoWeAre = () => {
                 data-aos-duration="400"
                 className="text-center md:text-start text-sm md:text-xl font-paraFont text-gray-300"
               >
-                M/s CLASS & Co. LLP (formerly Chaturvedi & Agrawal) is a
-                Mumbai-based Chartered Accountancy firm offering end-to-end
-                professional solutions — from audit and taxation to
-                restructuring and regulatory consulting. For over four decades,
-                we've been helping clients simplify complex financial landscapes
-                through personalized, ethical, and value-driven services.
+                C L A S S & Co. LLP is a multi-disciplinary Chartered
+                Accountancy firm offering audit, taxation, regulatory
+                compliance, and advisory services. We work closely with
+                businesses to provide practical, transparent, and value-driven
+                solutions tailored to evolving regulatory and commercial
+                environments.
               </p>
             </div>
           </div>

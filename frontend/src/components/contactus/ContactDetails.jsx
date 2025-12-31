@@ -13,15 +13,27 @@ function ContactDetails() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
         <div className="flex flex-col items-center gap-2">
-          <FaPhone size={28} className="text-secondary-color " />
+          <FaPhone size={28} className="text-secondary-color" />
           <h4 className="font-semibold text-white">Phone</h4>
-          <p className="text-gray-300">+91 98765 43210</p>
+
+          <a
+            href="tel:+919819082400"
+            className="text-gray-300 hover:text-secondary-color transition"
+          >
+            +91 98190 82400
+          </a>
         </div>
 
         <div className="flex flex-col items-center gap-2">
-          <FaEnvelope size={28} className="text-secondary-color " />
+          <FaEnvelope size={28} className="text-secondary-color" />
           <h4 className="font-semibold text-white">Email</h4>
-          <p className="text-gray-300">info@classandco.com</p>
+
+          <a
+            href="mailto:info@classca.in"
+            className="text-gray-300 hover:text-secondary-color transition"
+          >
+            info@classca.in
+          </a>
         </div>
 
         <div className="flex flex-col items-center gap-2">

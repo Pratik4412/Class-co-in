@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { servicesTabs } from "../../data/text";
-
+import ourTeamside from "../../assets/aboutpage/out-promise.webp";
 const OverviewSa = () => {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -39,50 +39,57 @@ const OverviewSa = () => {
         </div>
 
         {/* Tab Content */}
-        <div
-          data-aos="fade-up"
-          className="bg-white rounded-xl md:rounded-2xl shadow-lg
-          p-5 sm:p-6 md:p-8 max-w-4xl mx-auto"
-        >
-          <h3 className="text-xl md:text-2xl font-semibold text-[var(--primary-700)] mb-3 md:mb-4">
-            {servicesTabs[activeTab].title}
-          </h3>
+        <div className="flex items-center gap-5">
+          <div
+            data-aos="fade-up"
+            className=" rounded-xl md:rounded-2xl 
+          p-5 sm:p-6 md:p-8  mx-auto"
+          >
+            <h3 className="text-xl md:text-2xl font-semibold text-[var(--primary-700)] mb-3 md:mb-4">
+              {servicesTabs[activeTab].title}
+            </h3>
 
-          <p className="mb-4 text-sm sm:text-base text-[var(--primary-600)]">
-            <strong>Overview:</strong> {servicesTabs[activeTab].overview}
-          </p>
+            <p className="mb-4 text-sm sm:text-base text-[var(--primary-600)]">
+              <strong>Overview:</strong> {servicesTabs[activeTab].overview}
+            </p>
 
-          <p className="mb-5 text-sm sm:text-base text-[var(--primary-600)]">
-            <strong>Why it matters:</strong> {servicesTabs[activeTab].why}
-          </p>
+            <p className="mb-5 text-sm sm:text-base text-[var(--primary-600)]">
+              <strong>Why it matters:</strong> {servicesTabs[activeTab].why}
+            </p>
 
-          <div className="mb-5">
-            <h4 className="font-semibold text-[var(--primary-700)] mb-2">
-              Our services include:
-            </h4>
-            <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-[var(--primary-600)]">
-              {servicesTabs[activeTab].services.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          </div>
+            <div className="mb-5">
+              <h4 className="font-semibold text-[var(--primary-700)] mb-2">
+                Our services include:
+              </h4>
+              <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-[var(--primary-600)]">
+                {servicesTabs[activeTab].services.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </div>
 
-          <p className="mb-6 text-sm sm:text-base text-[var(--primary-600)]">
-            <strong>Who we serve:</strong> {servicesTabs[activeTab].serve}
-          </p>
+            <p className="mb-6 text-sm sm:text-base text-[var(--primary-600)]">
+              <strong>Who we serve:</strong> {servicesTabs[activeTab].serve}
+            </p>
 
-          {/* CTA */}
-          <button
-            className="
+            {/* CTA */}
+            <button
+              className="
               w-full md:w-auto
               px-6 py-3 rounded-lg
               bg-[var(--primary-700)] text-white
               font-medium text-sm sm:text-base
               hover:opacity-90 transition
             "
-          >
-            {servicesTabs[activeTab].cta}
-          </button>
+            >
+              {servicesTabs[activeTab].cta}
+            </button>
+          </div>
+          <img
+            src={ourTeamside}
+            alt="ourTeamside"
+            className="rounded-xl md:block hidden"
+          />
         </div>
       </div>
     </section>
