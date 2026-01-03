@@ -24,8 +24,8 @@ const Vision = () => {
               data-aos-delay="400"
               className="text-center md:text-start text-lg md:text-xl font-gray-600 font-paraFont"
             >
-              The foundation of C L A S S & Co. LLP is built on purpose, principles,
-              and professional excellence
+              The foundation of C L A S S & Co. LLP is built on purpose,
+              principles, and professional excellence
             </p>
             <div className="flex items-center flex-col md:flex-row gap-4 md:gap-6 ">
               <div
@@ -79,7 +79,7 @@ const Vision = () => {
               </div>
             </div>
           </div>
-          <img src={ourPromi} alt="" className="rounded-2xl" />
+          <img src={ourPromi} alt="" className="rounded-2xl md:block hidden" />
         </div>
 
         <div className="flex items-center gap-8 flex-col ">
