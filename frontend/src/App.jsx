@@ -20,7 +20,12 @@ function App() {
     AOS.refresh();
   }, []);
 
-  const hideContact = location.pathname === "/career";
+  const hideContact =
+    location.pathname === "/career" ||
+    location.pathname === "/privacy-policy" ||
+    location.pathname === "/terms-and-conditions" ||
+    location.pathname === "/about" ||
+    location.pathname === "/services";
 
   return (
     <div>
@@ -37,7 +42,6 @@ function App() {
         toastOptions={{ duration: 3000 }}
       />
 
-      {/* Conditionally render Contact */}
       {!hideContact && <Contact />}
 
       <Footer />
