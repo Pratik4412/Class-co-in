@@ -29,7 +29,7 @@ function ContactForm() {
             className="border border-[#9A3B12] rounded-2xl p-6 bg-transparent"
           >
             <h3 className="text-xl font-semibold text-[#9A3B12] mb-3">
-              KANDIVALI
+              Kandivali (Head Office)
             </h3>
             <p className="text-[#5c3b2a] leading-relaxed">
               5A/401, Shraddha Complex, <br />
@@ -44,7 +44,7 @@ function ContactForm() {
             className="border border-[#9A3B12] rounded-2xl p-6 bg-transparent"
           >
             <h3 className="text-xl font-semibold text-[#9A3B12] mb-3">
-              ANDHERI
+              Andheri
             </h3>
             <p className="text-[#5c3b2a] leading-relaxed">
               1201, Lotus Arc One, New Link Road, <br />
@@ -59,7 +59,7 @@ function ContactForm() {
             className="border border-[#9A3B12] rounded-2xl p-6 bg-transparent"
           >
             <h3 className="text-xl font-semibold text-[#9A3B12] mb-3">
-              MULUND
+              Mulund
             </h3>
             <p className="text-[#5c3b2a] leading-relaxed">
               724, Ecstasy City of Joy, JSD Road, <br />
@@ -74,7 +74,7 @@ function ContactForm() {
             className="border border-[#9A3B12] rounded-2xl p-6 bg-transparent"
           >
             <h3 className="text-xl font-semibold text-[#9A3B12] mb-3">
-              SOUTH MUMBAI
+              South Mumbai
             </h3>
             <p className="text-[#5c3b2a] leading-relaxed">
               102-B, 1st Floor, New Building, <br />

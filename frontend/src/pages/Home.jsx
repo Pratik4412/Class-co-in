@@ -26,7 +26,7 @@ const Home = () => {
                 in Professional Services
               </h1>
               <h6 className="fadeUp fadeUpDelay3 fadeUp text-base md:text-lg lg:text-xl font-semibold text-white font-paraFont">
-                Chartered Accountants • Consultants • Advisors
+                Chartered Accountants | Consultants | Advisors
               </h6>
             </div>
             <div>
@@ -34,7 +34,7 @@ const Home = () => {
                 className="btn-button "
                 onClick={() => navigate("/services")}
               >
-                Explore Services
+                Explore Our Services
               </button>
             </div>
           </div>

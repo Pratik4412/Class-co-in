@@ -123,11 +123,13 @@ const Footer = () => {
               alt="CLASS & Co LLP"
               className="w-[180px] md:w-[240px]"
             /> */}
-            <p className="text-base font-paraFont leading-relaxed text-white/85 max-w-md">
-              C L A S S & Co. LLP is a firm of Chartered Accountants committed
-              to delivering reliable, ethical, and forward-looking professional
-              solutions. We partner with businesses to navigate compliance,
-              financial clarity, and sustainable growth with confidence.
+            <p className="text-sm font-paraFont leading-relaxed text-white/85 max-w-md">
+              C L A S S & Co. LLP is a professionally managed firm of Chartered
+              Accountants providing audit, taxation, advisory, and regulatory
+              compliance services. With a legacy spanning over four decades, we
+              support businesses, institutions, and individuals in meeting
+              statutory obligations, managing financial complexity, and ensuring
+              long-term stability through disciplined professional practices.
             </p>
             <div className="bg-white/95 p-2 rounded-xl shadow-lg w-fit">
               <img src={Ca_log} alt="CA Certification" className="w-[60px]" />

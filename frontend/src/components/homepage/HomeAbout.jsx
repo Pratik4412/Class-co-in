@@ -125,14 +125,24 @@ const HomeAbout = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="300"
-            className="text-base md:text-lg lg:text-xl font-paraFont text-gray-400 leading-relaxed"
+            className="text-sm md:text-base font-paraFont text-gray-400 leading-relaxed"
           >
-            Established in 1984, C L A S S & Co. LLP is a Mumbai-based Chartered
-            Accountancy firm delivering audit, taxation, compliance, and
-            advisory services. We work closely with businesses to ensure
-            financial clarity, regulatory confidence, and long-term growth.
+            Established in 1984, CLASS & Co. LLP is a Mumbai-based firm of
+            Chartered Accountants offering a wide range of professional services
+            including audit & assurance, direct and indirect taxation, corporate
+            finance, insolvency advisory, and regulatory compliance. Over the
+            years, the firm has evolved into a multidisciplinary practice
+            serving clients across diverse sectors and business stages.
           </p>
-
+          <p
+            data-aos="fade-up"
+            data-aos-delay="300"
+            className="text-sm md:text-base font-paraFont text-gray-400 leading-relaxed"
+          >
+            Our approach combines technical expertise, regulatory understanding,
+            and practical execution to deliver solutions that are accurate,
+            compliant, and aligned with client requirements.
+          </p>
           {/* TRUST POINTS */}
           <div
             data-aos="fade-up"

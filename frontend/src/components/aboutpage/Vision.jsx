@@ -40,9 +40,10 @@ const Vision = () => {
                   Our <span className="text-secondary-color">Mission</span>{" "}
                 </h3>
                 <p className="text-base font-paraFont text-gray-300">
-                  To be recognized as a trusted leader in professional services
-                  by maintaining integrity, accuracy, and client satisfaction at
-                  all times.
+                  To be recognised as a trusted professional services firm by
+                  delivering consistent, ethical, and technically sound
+                  solutions that address client needs and regulatory
+                  requirements.
                 </p>
                 <span
                   className="
@@ -65,8 +66,10 @@ const Vision = () => {
                   Our <span className="text-secondary-color">Vision</span>
                 </h3>
                 <p className="text-base font-paraFont text-gray-300">
-                  To turn knowledge into value for the benefit of our clients
-                  and continually strive for excellence in everything we do.
+                  To turn professional knowledge into value for clients by
+                  delivering dependable, accurate, and compliant solutions while
+                  continuously improving service quality and professional
+                  capability.
                 </p>
                 <span
                   className="

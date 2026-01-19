@@ -17,10 +17,12 @@ const OurApproach = () => {
             data-aos-delay="400"
             className="text-center md:text-start text-lg font-paraFont text-gray-600"
           >
-            Our approach is built on three cornerstones — Expertise, Ethics, and
-            Empathy. We go beyond compliance to deliver insights that empower
-            decisions. Every engagement is handled with utmost confidentiality
-            and a genuine understanding of each client's business.
+            Our professional approach is centred on:
+            <br /> 1. Understanding client requirements and regulatory context
+            <br />
+            2. Risk assessment and applicability evaluation <br />
+            3. Structured execution with proper documentation <br />
+            4. Review, reporting, and ongoing advisory support
           </p>
         </div>
 
@@ -34,7 +36,7 @@ const OurApproach = () => {
                 className="w-[460px] flex items-start flex-col gap-2 py-6 px-8 bg-white rounded-lg"
               >
                 <h1 className="text-xl font-headingFont font-semibold">
-                  Expertise
+                  Structured
                 </h1>
               </div>
             </div>
@@ -46,7 +48,7 @@ const OurApproach = () => {
                 className="w-[460px] flex items-start flex-col gap-2 py-6 px-8 bg-primary-color rounded-lg"
               >
                 <h1 className="text-xl font-headingFont font-semibold text-white">
-                  Ethics
+                  Disciplined
                 </h1>
               </div>
             </div>
@@ -58,7 +60,7 @@ const OurApproach = () => {
                 className="w-[460px] flex items-start flex-col gap-2 py-6 px-8 bg-white rounded-lg"
               >
                 <h1 className="text-xl font-headingFont font-semibold">
-                  Empathy
+                  Transparent
                 </h1>
               </div>
             </div>

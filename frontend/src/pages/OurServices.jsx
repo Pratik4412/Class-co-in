@@ -15,7 +15,7 @@ const OurServices = () => {
               </h1>
 
               <h6 className="fadeUp fadeUpDelay3 fadeUp text-base md:text-lg lg:text-xl font-semibold text-white font-paraFont">
-                Decades of Trust. Decades of Excellence.
+                Comprehensive Professional Solutions Under One Roof
               </h6>
             </div>
           </div>
