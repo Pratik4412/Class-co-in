@@ -21,7 +21,7 @@ const OurPromise = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="400"
-            className=" text-center md:text-start text-base font-gray-600 font-paraFont text-gray-300"
+            className=" text-center md:text-start text-sm md:text-base font-gray-600 font-paraFont text-gray-300"
           >
             CA. Prashant Gurudas Mittal is a visionary professional whose career
             reflects exceptional dedication, discipline, and commitment to
@@ -32,7 +32,7 @@ const OurPromise = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="400"
-            className=" text-center md:text-start text-base font-gray-600 font-paraFont text-gray-300"
+            className=" text-center md:text-start text-sm md:text-base font-gray-600 font-paraFont text-gray-300"
           >
             With over two decades of professional experience, he has played a
             pivotal role in shaping CLASS & Co. LLP into a trusted and
@@ -43,7 +43,7 @@ const OurPromise = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="400"
-            className=" text-center md:text-start text-base font-gray-600 font-paraFont text-gray-300"
+            className=" text-center md:text-start text-sm md:text-base font-gray-600 font-paraFont text-gray-300"
           >
             A committed lifelong learner, CA. Prashant Mittal has consistently
             enhanced his professional capabilities across finance, taxation,

@@ -27,7 +27,7 @@ const WhoWeAre = () => {
           couter(setExperienced, 6, 400);
         }
       },
-      { threshold: 0.4 }
+      { threshold: 0.4 },
     );
     if (sectionRef.current) observer.observe(sectionRef.current);
 
@@ -50,7 +50,7 @@ const WhoWeAre = () => {
               <p
                 data-aos="fade-up"
                 data-aos-duration="400"
-                className="text-center md:text-start text-sm md:text-xl font-paraFont text-gray-300"
+                className="text-center md:text-start text-sm md:text-base font-paraFont text-gray-300"
               >
                 C L A S S & Co. LLP is a multi-disciplinary Chartered
                 Accountancy firm offering audit, taxation, regulatory

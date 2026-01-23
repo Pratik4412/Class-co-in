@@ -15,7 +15,7 @@ const OurApproach = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="400"
-            className="text-center md:text-start text-lg font-paraFont text-gray-600"
+            className="text-start text-md md:text-lg font-paraFont text-gray-600"
           >
             Our professional approach is centred on:
             <br /> 1. Understanding client requirements and regulatory context

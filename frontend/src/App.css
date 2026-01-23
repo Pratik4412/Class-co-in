@@ -201,6 +201,52 @@ body {
     color: #9ca3af;
 }
 
+/* Fade Up Animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeUp {
+    animation: fadeUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.fadeUpDelay2 {
+    animation-delay: 0.2s;
+}
+
+.fadeUpDelay3 {
+    animation-delay: 0.3s;
+}
+
+/* Shimmer effect for extra polish */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.group:hover .shimmer {
+    animation: shimmer 2s infinite;
+    background: linear-gradient(to right,
+            transparent 0%,
+            rgba(202, 179, 108, 0.1) 50%,
+            transparent 100%);
+    background-size: 1000px 100%;
+}
+
 /* Simple fade animation */
 @keyframes fadeUp {
     from {

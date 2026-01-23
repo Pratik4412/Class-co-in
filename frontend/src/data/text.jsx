@@ -236,12 +236,14 @@ export const services = [
 // ];
 
 // data/servicesTabs.js
+
+// data/text.js or wherever you store your data
 export const servicesTabs = [
   {
+    id: "audit-assurance",
     title: "Audit & Assurance",
     overview:
       "Our Audit & Assurance services provide independent and objective evaluation of financial statements, internal controls, and compliance frameworks. We follow a risk-based audit methodology aligned with applicable standards and industry practices.",
-    // why: "A well-conducted audit enhances credibility with investors, regulators, lenders, and other stakeholders while identifying risks and process gaps.",
     services: [
       "Statutory Audit",
       "Internal Audit",
@@ -253,30 +255,59 @@ export const servicesTabs = [
       "Risk-Based Audit Assignments",
       "ISEDP Audits",
     ],
-    serve:
-      "Corporates, SMEs, startups, LLPs, trusts, and not-for-profit organizations.",
-    cta: "Talk to our Audit Experts",
+    cta: "Talk to Our Audit Experts",
   },
   {
-    title: "Taxation",
+    id: "direct-taxation",
+    title: "Direct Taxation",
+    category: "Taxation Services",
     overview:
       "We provide end-to-end direct tax advisory and compliance services covering planning, filing, assessments, and representation.",
-    // why: "Effective tax planning ensures compliance while reducing exposure to penalties and unnecessary tax outflows.",
     services: [
-      "Income Tax Return Filing ",
-      "Tax Planning and Advisory ",
+      "Income Tax Return Filing",
+      "Tax Planning and Advisory",
       "Assessments and Appeals",
-      "TDS Filings and Compliance ",
+      "TDS Filings and Compliance",
       "Representation before Tax Authorities",
     ],
-    serve: "Individuals, businesses, professionals, startups, and corporates.",
     cta: "Consult Our Tax Team",
   },
   {
+    id: "indirect-taxation",
+    title: "Indirect Taxation (GST)",
+    category: "Taxation Services",
+    overview:
+      "Our GST services support businesses in managing indirect tax obligations efficiently while ensuring regulatory compliance.",
+    services: [
+      "GST Registration",
+      "GST Return Filing",
+      "GST Audits",
+      "Compliance Advisory",
+      "Representation and Litigation Support",
+      "GST Training and System Setup",
+    ],
+    cta: "Get GST Compliance Support",
+  },
+  {
+    id: "fema-rbi",
+    title: "FEMA, RBI & Forex Compliance",
+    overview:
+      "We assist clients with compliance under FEMA, RBI regulations, and foreign exchange laws, particularly for cross-border transactions and overseas investments.",
+    services: [
+      "FEMA Advisory",
+      "FDI and ODI Compliance",
+      "RBI Filings and Regulatory Reporting",
+      "External Commercial Borrowings (ECB)",
+      "Cross-Border Transactions",
+      "Forex Laws Compliance",
+    ],
+    cta: "Discuss Your Regulatory Requirements",
+  },
+  {
+    id: "corporate-finance",
     title: "Corporate Finance & Restructuring",
     overview:
       "Our corporate finance services support strategic financial decisions, restructuring initiatives, and funding requirements.",
-    why: "Strategic financial planning enables sustainable growth, better capital allocation, and value creation.",
     services: [
       "Project Finance and Bank Finance",
       "Business and Asset Valuations",
@@ -286,57 +317,156 @@ export const servicesTabs = [
       "Strategic Alliances",
       "Merchant Banking Advisory Support",
     ],
-    serve: "Startups, growing businesses, and established enterprises.",
     cta: "Speak to Our Corporate Finance Advisors",
   },
   {
+    id: "insolvency-ibc",
+    title: "Insolvency & IBC Advisory",
+    overview:
+      "We provide advisory services under the Insolvency and Bankruptcy Code, 2016, assisting stakeholders through resolution and liquidation processes.",
+    services: [
+      "Resolution Planning",
+      "Liquidation Support",
+      "Committee of Creditors (COC) Representation",
+      "Documentation and Regulatory Compliance",
+    ],
+    cta: "Connect With Our IBC Advisory Team",
+  },
+  {
+    id: "business-advisory",
     title: "Business Advisory & Outsourcing",
     overview:
       "Our advisory and outsourcing services help organisations strengthen financial discipline, reporting systems, and operational efficiency.",
-    why: "Businesses need more than compliance—they need insights that improve performance and decision-making.",
     services: [
-      "Strategic Planning and Risk Management ",
-      "Financial Modelling and Forecasting ",
-      "Cash Flow Management and Budgeting ",
-      "Performance Review and MIS Reporting ",
-      "Virtual CFO Services ",
-      "Accounting and Bookkeeping ",
-      "Payroll Management ",
+      "Strategic Planning and Risk Management",
+      "Financial Modelling and Forecasting",
+      "Cash Flow Management and Budgeting",
+      "Performance Review and MIS Reporting",
+      "Virtual CFO Services",
+      "Accounting and Bookkeeping",
+      "Payroll Management",
       "Compliance Outsourcing",
     ],
-    serve: "Entrepreneurs, SMEs, family-run businesses, and corporates.",
-    cta: "Partner With Us",
+    cta: "Explore Advisory Support Options",
   },
   {
-    title: "FEMA & RBI Compliance",
+    id: "specialized-advisory",
+    title: "Specialized Advisory Services",
     overview:
-      "We assist clients with compliance under FEMA, RBI regulations, and foreign exchange laws, particularly for cross-border transactions and overseas investments.",
-    why: "Non-compliance can result in severe penalties and regulatory scrutiny.",
+      "Our specialised advisory services address complex, sensitive, and high-risk business requirements.",
     services: [
-      "FEMA Advisory",
-      "FDI and ODI Compliance",
-      "RBI Filings and Regulatory Reporting",
-      "External Commercial Borrowings (ECB)",
-      "Cross-Border Transactions",
-      "Forex Laws Compliance",
+      "Fraud Investigation and Forensic Audit",
+      "AML Advisory",
+      "Cyber Forensics",
+      "Internal Controls and Risk Frameworks",
+      "NGO Advisory Services",
+      "International Incorporation and Structuring",
     ],
-    serve:
-      "Indian companies, foreign entities, NRIs, and multinational businesses.",
-    cta: "Discuss Your Regulatory Requirements",
-  },
-  {
-    title: "Forensic & Investigation",
-    overview:
-      "Our Forensic & Investigation services help identify, analyze, and resolve financial irregularities and disputes.",
-    why: "Early detection of fraud and financial misconduct minimizes losses and protects reputation.",
-    services: [
-      "Fraud investigation",
-      "Forensic accounting",
-      "Dispute resolution support",
-      "Litigation & arbitration support",
-      "Risk & fraud prevention reviews",
-    ],
-    serve: "Corporates, banks, legal firms, and regulatory bodies.",
-    cta: "Consult Forensic Specialists",
+    cta: "Request Expert Assistance",
   },
 ];
+
+// export const servicesTabs = [
+//   {
+//     title: "Audit & Assurance",
+//     overview:
+//       "Our Audit & Assurance services provide independent and objective evaluation of financial statements, internal controls, and compliance frameworks. We follow a risk-based audit methodology aligned with applicable standards and industry practices.",
+//     // why: "A well-conducted audit enhances credibility with investors, regulators, lenders, and other stakeholders while identifying risks and process gaps.",
+//     services: [
+//       "Statutory Audit",
+//       "Internal Audit",
+//       "Concurrent Audit",
+//       "Revenue Audit",
+//       "Management and Operational Audit",
+//       "Forensic Audit",
+//       "Due Diligence Reviews",
+//       "Risk-Based Audit Assignments",
+//       "ISEDP Audits",
+//     ],
+//     serve:
+//       "Corporates, SMEs, startups, LLPs, trusts, and not-for-profit organizations.",
+//     cta: "Talk to our Audit Experts",
+//   },
+//   {
+//     title: "Taxation",
+//     overview:
+//       "We provide end-to-end direct tax advisory and compliance services covering planning, filing, assessments, and representation.",
+//     // why: "Effective tax planning ensures compliance while reducing exposure to penalties and unnecessary tax outflows.",
+//     services: [
+//       "Income Tax Return Filing ",
+//       "Tax Planning and Advisory ",
+//       "Assessments and Appeals",
+//       "TDS Filings and Compliance ",
+//       "Representation before Tax Authorities",
+//     ],
+//     serve: "Individuals, businesses, professionals, startups, and corporates.",
+//     cta: "Consult Our Tax Team",
+//   },
+//   {
+//     title: "Corporate Finance & Restructuring",
+//     overview:
+//       "Our corporate finance services support strategic financial decisions, restructuring initiatives, and funding requirements.",
+//     why: "Strategic financial planning enables sustainable growth, better capital allocation, and value creation.",
+//     services: [
+//       "Project Finance and Bank Finance",
+//       "Business and Asset Valuations",
+//       "Mergers and Acquisitions Advisory",
+//       "Business Restructuring and Turnaround Financing",
+//       "Debt and Capital Restructuring",
+//       "Strategic Alliances",
+//       "Merchant Banking Advisory Support",
+//     ],
+//     serve: "Startups, growing businesses, and established enterprises.",
+//     cta: "Speak to Our Corporate Finance Advisors",
+//   },
+//   {
+//     title: "Business Advisory & Outsourcing",
+//     overview:
+//       "Our advisory and outsourcing services help organisations strengthen financial discipline, reporting systems, and operational efficiency.",
+//     why: "Businesses need more than compliance—they need insights that improve performance and decision-making.",
+//     services: [
+//       "Strategic Planning and Risk Management ",
+//       "Financial Modelling and Forecasting ",
+//       "Cash Flow Management and Budgeting ",
+//       "Performance Review and MIS Reporting ",
+//       "Virtual CFO Services ",
+//       "Accounting and Bookkeeping ",
+//       "Payroll Management ",
+//       "Compliance Outsourcing",
+//     ],
+//     serve: "Entrepreneurs, SMEs, family-run businesses, and corporates.",
+//     cta: "Partner With Us",
+//   },
+//   {
+//     title: "FEMA & RBI Compliance",
+//     overview:
+//       "We assist clients with compliance under FEMA, RBI regulations, and foreign exchange laws, particularly for cross-border transactions and overseas investments.",
+//     why: "Non-compliance can result in severe penalties and regulatory scrutiny.",
+//     services: [
+//       "FEMA Advisory",
+//       "FDI and ODI Compliance",
+//       "RBI Filings and Regulatory Reporting",
+//       "External Commercial Borrowings (ECB)",
+//       "Cross-Border Transactions",
+//       "Forex Laws Compliance",
+//     ],
+//     serve:
+//       "Indian companies, foreign entities, NRIs, and multinational businesses.",
+//     cta: "Discuss Your Regulatory Requirements",
+//   },
+//   {
+//     title: "Forensic & Investigation",
+//     overview:
+//       "Our Forensic & Investigation services help identify, analyze, and resolve financial irregularities and disputes.",
+//     why: "Early detection of fraud and financial misconduct minimizes losses and protects reputation.",
+//     services: [
+//       "Fraud investigation",
+//       "Forensic accounting",
+//       "Dispute resolution support",
+//       "Litigation & arbitration support",
+//       "Risk & fraud prevention reviews",
+//     ],
+//     serve: "Corporates, banks, legal firms, and regulatory bodies.",
+//     cta: "Consult Forensic Specialists",
+//   },
+// ];

@@ -22,7 +22,7 @@ const Vision = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="400"
-              className="text-center md:text-start text-lg md:text-xl font-gray-600 font-paraFont"
+              className="text-center md:text-start text-md md:text-xl font-gray-600 font-paraFont"
             >
               The foundation of C L A S S & Co. LLP is built on purpose,
               principles, and professional excellence
@@ -39,7 +39,7 @@ const Vision = () => {
                 <h3 className="text-xl font-headingFont font-semibold text-white">
                   Our <span className="text-secondary-color">Mission</span>{" "}
                 </h3>
-                <p className="text-base font-paraFont text-gray-300">
+                <p className="text-sm md:text-base font-paraFont text-gray-300">
                   To be recognised as a trusted professional services firm by
                   delivering consistent, ethical, and technically sound
                   solutions that address client needs and regulatory
@@ -65,7 +65,7 @@ const Vision = () => {
                 <h3 className="text-xl font-headingFont font-semibold text-white">
                   Our <span className="text-secondary-color">Vision</span>
                 </h3>
-                <p className="text-base font-paraFont text-gray-300">
+                <p className="text-sm md:text-base font-paraFont text-gray-300">
                   To turn professional knowledge into value for clients by
                   delivering dependable, accurate, and compliant solutions while
                   continuously improving service quality and professional

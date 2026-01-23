@@ -27,7 +27,7 @@ const OurExprtise = () => {
           counter(setEngagements, 500, 10);
         }
       },
-      { threshold: 0.4 }
+      { threshold: 0.4 },
     );
     if (sectionRef.current) observer.observe(sectionRef.current);
 
@@ -47,7 +47,7 @@ const OurExprtise = () => {
             Domains
           </h1>
 
-          <p className="text-base md:text-lg font-paraFont text-gray-700 leading-relaxed">
+          <p className="text-sm md:text-base font-paraFont text-gray-700 leading-relaxed">
             Our expertise spans across diverse industries, enabling us to
             deliver practical, compliant, and future-ready solutions tailored to
             each client’s unique business environment.

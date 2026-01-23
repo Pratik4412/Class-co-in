@@ -4,6 +4,7 @@ import CoreServices from "../components/homepage/CoreServices";
 import StrenghtsO from "../components/homepage/StrenghtsO";
 import OurExprtise from "../components/homepage/OurExprtise";
 import { useNavigate } from "react-router-dom";
+import Credentials from "../components/homepage/Credentials";
 const Home = () => {
   const navigate = useNavigate();
   return (
@@ -42,6 +43,7 @@ const Home = () => {
       </div>
       <HomeAbout />
       <CoreServices />
+      <Credentials />
       <StrenghtsO />
       <OurExprtise />
     </div>

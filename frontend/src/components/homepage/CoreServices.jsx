@@ -50,7 +50,7 @@ const CoreServices = () => {
               {/* Description */}
               <p
                 className="
-            text-base md:text-lg text-gray-200 font-paraFont text-center
+           text-sm md:text-base text-gray-200 font-paraFont text-center
             transition-all duration-500
           "
               >

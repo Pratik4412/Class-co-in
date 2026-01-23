@@ -88,7 +88,7 @@ const StrenghtsO = () => {
           >
             Versatility
           </h1>
-          <p className="text-base md:text-lg font-para text-gray-300 max-w-sm">
+          <p className="text-sm md:text-base font-para text-gray-300 max-w-sm">
             Adaptive solutions designed to meet evolving business and regulatory
             needs across sectors.
           </p>
@@ -106,7 +106,7 @@ const StrenghtsO = () => {
           >
             Leadership
           </h1>
-          <p className="text-base md:text-lg font-para text-gray-300 max-w-sm">
+          <p className="text-sm md:text-base font-para text-gray-300 max-w-sm">
             Strategic guidance backed by experience, insight, and a strong
             ethical foundation.
           </p>
@@ -146,7 +146,7 @@ const StrenghtsO = () => {
           >
             Legacy
           </h1>
-          <p className="text-base md:text-lg font-para text-gray-300 max-w-sm">
+          <p className="text-sm md:text-base font-para text-gray-300 max-w-sm">
             A legacy built on trust, consistency, and long-standing client
             relationships.
           </p>
@@ -165,7 +165,7 @@ const StrenghtsO = () => {
           >
             Multi-Industry Expertise
           </h1>
-          <p className="text-base md:text-lg font-para text-gray-300 max-w-sm">
+          <p className="text-sm md:text-base font-para text-gray-300 max-w-sm">
             Proven expertise across manufacturing, services, infrastructure, and
             emerging industries.
           </p>
