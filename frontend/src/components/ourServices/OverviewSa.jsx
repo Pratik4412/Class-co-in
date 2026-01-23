@@ -241,7 +241,6 @@ const OverviewSa = () => {
             </div>
           </div>
         </div>
-
         {/* Bottom Info Banner */}
         <div className="mt-10 md:mt-12 fadeUp fadeUpDelay3">
           <div className="bg-gradient-to-r from-primary-700 to-secondary-700 rounded-2xl p-6 md:p-8 text-center">
