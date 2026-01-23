@@ -1,5 +1,5 @@
 import React from "react";
-import ourPromi from "../../assets/aboutpage/vision.webp";
+import ourPromi from "../../assets/aboutpage/about.svg";
 import ourValues from "../../assets/aboutpage/Core Values - visual selection 1.png";
 import { BiCurrentLocation } from "react-icons/bi";
 import { BiRevision } from "react-icons/bi";
@@ -82,7 +82,13 @@ const Vision = () => {
               </div>
             </div>
           </div>
-          <img src={ourPromi} alt="" className="rounded-2xl md:block hidden" />
+          <div className="w-full h-full">
+            <img
+              src={ourPromi}
+              alt=""
+              className="rounded-2xl md:block hidden"
+            />
+          </div>
         </div>
 
         <div className="flex items-center gap-8 flex-col ">

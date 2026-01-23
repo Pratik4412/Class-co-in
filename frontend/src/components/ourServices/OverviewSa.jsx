@@ -102,7 +102,7 @@
 
 import React, { useState } from "react";
 import { servicesTabs } from "../../data/text";
-import ourTeamside from "../../assets/aboutpage/out-promise.webp";
+import ourTeamside from "../../assets/aboutpage/our promise.svg";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
 
 const OverviewSa = () => {

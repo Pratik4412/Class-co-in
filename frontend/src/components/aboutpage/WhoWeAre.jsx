@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import whoAre from "../../assets/aboutpage/who-we-are.webp";
+import whoAre from "../../assets/aboutpage/who-we-are.svg";
 const WhoWeAre = () => {
   const sectionRef = useRef(null);
   const hasAnimated = useRef(false);
