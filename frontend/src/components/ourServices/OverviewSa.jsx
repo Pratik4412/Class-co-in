@@ -104,6 +104,7 @@ import React, { useState } from "react";
 import { servicesTabs } from "../../data/text";
 import ourTeamside from "../../assets/aboutpage/our promise.svg";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const OverviewSa = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -206,9 +207,10 @@ const OverviewSa = () => {
             </div>
 
             {/* CTA Button */}
-            <button
+            <Link
+              to={"/contact-us"}
               className="
-                w-full md:w-auto
+                w-full md:w-fit
                 px-6 md:px-8 py-3 md:py-4 rounded-lg
                 bg-gradient-to-r from-primary-700 to-primary-600
                 text-white font-semibold text-sm sm:text-base
@@ -221,14 +223,14 @@ const OverviewSa = () => {
             >
               {servicesTabs[activeTab].cta}
               <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-            </button>
+            </Link>
           </div>
 
           {/* Image Section */}
           <div className="w-full lg:w-2/5 fadeUp fadeUpDelay3">
             <div className="relative rounded-xl md:rounded-2xl overflow-hidden shadow-xl">
               <img
-                src={ourTeamside}
+                src={servicesTabs[activeTab].ourTeamside}
                 alt="Professional Services"
                 className="w-full h-[250px] md:h-[400px] lg:h-full object-cover object-center"
               />

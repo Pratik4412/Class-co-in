@@ -32,6 +32,15 @@ import { FiTruck } from "react-icons/fi";
 import { LiaIndustrySolid } from "react-icons/lia";
 import { GiChemicalDrop } from "react-icons/gi";
 import { BsPersonCheck } from "react-icons/bs";
+import one from "../assets/our-services/Audit & Assurance.png";
+import two from "../assets/our-services/Direct Taxation.png";
+import three from "../assets/our-services/Indirect Taxation (GST).png";
+import four from "../assets/our-services/FEMA, RBI & Forex Compliance.png";
+import five from "../assets/our-services/Corporate Finance & Restructuring.png";
+import six from "../assets/our-services/Insolvency & IBC Advisory.png";
+import seven from "../assets/our-services/Business Advisory & Outsourcing.png";
+import enght from "../assets/our-services/Specialized Advisory Services.png";
+
 export const navbar_items = [
   {
     path: "/",
@@ -190,53 +199,6 @@ export const services = [
   { title: "MSME Businesses", icon: <MdOutlineAddBusiness /> },
 ];
 
-// export const servicesPage = [
-//   {
-//     title: "Specialized Services",
-//     icon: "🧠",
-//     position: "top-left",
-//     points: ["Insolvency", "Business Restructuring"],
-//   },
-//   {
-//     title: "Business Support Services",
-//     icon: "⭐",
-//     position: "top-right",
-//     points: ["Company Registration", "ROC Filings"],
-//   },
-//   {
-//     title: "FEMA, RBI & FOREX Compliance",
-//     icon: "🌍",
-//     position: "left",
-//     points: ["FDI Compliance", "RBI Filings"],
-//   },
-//   {
-//     title: "Audit & Assurance",
-//     icon: "📘",
-//     position: "right",
-//     points: ["Statutory Audits", "Internal Audits"],
-//   },
-//   {
-//     title: "Business Advisory",
-//     icon: "💼",
-//     position: "bottom-left",
-//     points: ["Strategic Planning", "Risk Management"],
-//   },
-//   {
-//     title: "Taxation",
-//     icon: "🧾",
-//     position: "bottom-right",
-//     points: ["Direct Tax", "Indirect Tax"],
-//   },
-//   {
-//     title: "Corporate Finance",
-//     icon: "💰",
-//     position: "bottom-center",
-//     points: ["Project Reports", "Bank Finance"],
-//   },
-// ];
-
-// data/servicesTabs.js
-
 // data/text.js or wherever you store your data
 export const servicesTabs = [
   {
@@ -256,6 +218,7 @@ export const servicesTabs = [
       "ISEDP Audits",
     ],
     cta: "Talk to Our Audit Experts",
+    ourTeamside: one,
   },
   {
     id: "direct-taxation",
@@ -271,6 +234,7 @@ export const servicesTabs = [
       "Representation before Tax Authorities",
     ],
     cta: "Consult Our Tax Team",
+    ourTeamside: two,
   },
   {
     id: "indirect-taxation",
@@ -287,6 +251,7 @@ export const servicesTabs = [
       "GST Training and System Setup",
     ],
     cta: "Get GST Compliance Support",
+    ourTeamside: three,
   },
   {
     id: "fema-rbi",
@@ -302,6 +267,7 @@ export const servicesTabs = [
       "Forex Laws Compliance",
     ],
     cta: "Discuss Your Regulatory Requirements",
+    ourTeamside: four,
   },
   {
     id: "corporate-finance",
@@ -318,6 +284,7 @@ export const servicesTabs = [
       "Merchant Banking Advisory Support",
     ],
     cta: "Speak to Our Corporate Finance Advisors",
+    ourTeamside: five,
   },
   {
     id: "insolvency-ibc",
@@ -331,6 +298,7 @@ export const servicesTabs = [
       "Documentation and Regulatory Compliance",
     ],
     cta: "Connect With Our IBC Advisory Team",
+    ourTeamside: six,
   },
   {
     id: "business-advisory",
@@ -348,6 +316,7 @@ export const servicesTabs = [
       "Compliance Outsourcing",
     ],
     cta: "Explore Advisory Support Options",
+    ourTeamside: seven,
   },
   {
     id: "specialized-advisory",
@@ -363,6 +332,7 @@ export const servicesTabs = [
       "International Incorporation and Structuring",
     ],
     cta: "Request Expert Assistance",
+    ourTeamside: enght,
   },
 ];
 
