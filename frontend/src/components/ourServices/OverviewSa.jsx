@@ -110,7 +110,7 @@ const OverviewSa = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className="bg-gradient-to-b from-secondary-50 to-primary-50 py-14 md:py-20">
+    <section className="bg-[#281F1C] py-14 md:py-20">
       <div className="container mx-auto px-4 sm:px-6 md:px-10 lg:px-20">
         {/* Heading */}
         <div className="text-center mb-10 md:mb-14 fadeUp">
@@ -119,12 +119,12 @@ const OverviewSa = () => {
               Our Services
             </span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary-800 font-headingFont mb-4">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent font-headingFont leading-tight">
             Comprehensive Professional Solutions
             <br className="hidden md:block" />
             Under One Roof
           </h2>
-          <p className="mt-3 md:mt-4 max-w-3xl mx-auto text-sm md:text-base text-gray-700 font-paraFont leading-relaxed">
+          <p className="mt-3 md:mt-4 max-w-3xl mx-auto text-sm md:text-base text-gray-300 font-paraFont leading-relaxed">
             CLASS & Co. LLP offers an integrated range of professional services
             designed to support businesses, institutions, and individuals across
             statutory compliance, advisory, and financial management functions.
@@ -146,7 +146,7 @@ const OverviewSa = () => {
                   ${
                     activeTab === index
                       ? "bg-primary-700 text-white shadow-lg scale-105"
-                      : "bg-white text-primary-700 hover:bg-primary-50 hover:shadow-md border border-primary-200"
+                      : "bg-[#180F0B] text-primary-100 hover:bg-primary-800 hover:shadow-md border border-primary-200"
                   }
                 `}
               >
@@ -160,7 +160,7 @@ const OverviewSa = () => {
         <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-8">
           {/* Content Section */}
           <div
-            className="w-full lg:w-3/5 bg-white rounded-xl md:rounded-2xl 
+            className="w-full lg:w-3/5 bg-[#180F0B] rounded-xl md:rounded-2xl 
             p-6 sm:p-7 md:p-9 shadow-lg border border-primary-100
             fadeUp fadeUpDelay3"
           >
@@ -174,20 +174,20 @@ const OverviewSa = () => {
             )}
 
             {/* Title */}
-            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-primary-800 mb-4 font-headingFont">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent leading-tight mb-4 font-headingFont">
               {servicesTabs[activeTab].title}
             </h3>
 
             {/* Overview */}
-            <div className="mb-6 p-4 bg-primary-50 rounded-lg border-l-4 border-primary-600">
-              <p className="text-sm sm:text-base text-gray-800 font-paraFont leading-relaxed">
+            <div className="mb-6 p-4 bg-[#281F1C] rounded-lg border-l-4 border-primary-600">
+              <p className="text-sm sm:text-base text-gray-200 font-paraFont leading-relaxed">
                 {servicesTabs[activeTab].overview}
               </p>
             </div>
 
             {/* Services List */}
             <div className="mb-6">
-              <h4 className="font-bold text-primary-800 mb-4 text-base md:text-lg font-headingFont flex items-center gap-2">
+              <h4 className="font-bold text-primary-100 mb-4 text-base md:text-lg font-headingFont flex items-center gap-2">
                 <span className="w-1 h-6 bg-secondary-600 rounded"></span>
                 Services Include
               </h4>
@@ -195,7 +195,7 @@ const OverviewSa = () => {
                 {servicesTabs[activeTab].services.map((item, i) => (
                   <li
                     key={i}
-                    className="flex items-start gap-3 text-sm sm:text-base text-gray-700 font-paraFont group"
+                    className="flex items-start gap-3 text-sm sm:text-base text-gray-300 font-paraFont group"
                   >
                     <FaCheckCircle className="text-secondary-600 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform" />
                     <span className="group-hover:text-primary-800 transition-colors">

@@ -125,7 +125,7 @@ const HomeAbout = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="300"
-            className="text-sm md:text-base font-paraFont text-gray-400 leading-relaxed"
+            className="text-sm md:text-base font-paraFont text-gray-300 leading-relaxed"
           >
             Established in 1984, CLASS & Co. LLP is a Mumbai-based firm of
             Chartered Accountants offering a wide range of professional services
@@ -137,7 +137,7 @@ const HomeAbout = () => {
           <p
             data-aos="fade-up"
             data-aos-delay="300"
-            className="text-sm md:text-base font-paraFont text-gray-400 leading-relaxed"
+            className="text-sm md:text-base font-paraFont text-gray-300 leading-relaxed"
           >
             Our approach combines technical expertise, regulatory understanding,
             and practical execution to deliver solutions that are accurate,
@@ -149,25 +149,25 @@ const HomeAbout = () => {
             data-aos-delay="400"
             className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-2"
           >
-            <div className="bg-white rounded-xl p-4 shadow-sm">
-              <h4 className="text-lg font-semibold text-primary-700">
+            <div className="bg-[#180F0B] rounded-xl p-4 shadow-sm">
+              <h4 className="text-lg font-semibold text-primary-200">
                 40+ Years
               </h4>
-              <p className="text-sm text-gray-600">Industry Experience</p>
+              <p className="text-sm text-gray-300">Industry Experience</p>
             </div>
 
-            <div className="bg-white rounded-xl p-4 shadow-sm">
-              <h4 className="text-lg font-semibold text-primary-700">
+            <div className="bg-[#180F0B] rounded-xl p-4 shadow-sm">
+              <h4 className="text-lg font-semibold text-primary-200">
                 Multi-Industry
               </h4>
-              <p className="text-sm text-gray-600">Domain Expertise</p>
+              <p className="text-sm text-gray-300">Domain Expertise</p>
             </div>
 
-            <div className="bg-white rounded-xl p-4 shadow-sm">
-              <h4 className="text-lg font-semibold text-primary-700">
+            <div className="bg-[#180F0B] rounded-xl p-4 shadow-sm">
+              <h4 className="text-lg font-semibold text-primary-200">
                 Trusted
               </h4>
-              <p className="text-sm text-gray-600">Advisory Partner</p>
+              <p className="text-sm text-gray-300">Advisory Partner</p>
             </div>
           </div>
 

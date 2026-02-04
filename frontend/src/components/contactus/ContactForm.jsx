@@ -12,11 +12,11 @@ function ContactForm() {
   }, []);
 
   return (
-    <section className="bg-[#f7f4ee] py-16">
+    <section className="bg-[#281F1C] py-16">
       <div className="container mx-auto px-5 md:px-10 lg:px-20">
         {/* Heading */}
         <div className="mb-12" data-aos="fade-up">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#9A3B12]">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent font-headingFont leading-tight">
             | Our Offices
           </h2>
         </div>
@@ -26,12 +26,12 @@ function ContactForm() {
           {/* Kandivali */}
           <div
             data-aos="fade-right"
-            className="border border-[#9A3B12] rounded-2xl p-6 bg-transparent"
+            className="border border-secondary-color rounded-2xl p-6 bg-transparent"
           >
-            <h3 className="text-xl font-semibold text-[#9A3B12] mb-3">
+            <h3 className="text-xl font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent font-headingFont leading-tight mb-3">
               Kandivali (Head Office)
             </h3>
-            <p className="text-[#5c3b2a] leading-relaxed">
+            <p className="text-gray-100 leading-relaxed">
               5A/401, Shraddha Complex, <br />
               Asha Nagar, Thakur Complex, <br />
               Kandivali East, Mumbai – 400101
@@ -41,12 +41,12 @@ function ContactForm() {
           {/* Andheri */}
           <div
             data-aos="fade-left"
-            className="border border-[#9A3B12] rounded-2xl p-6 bg-transparent"
+            className="border border-secondary-color rounded-2xl p-6 bg-transparent"
           >
-            <h3 className="text-xl font-semibold text-[#9A3B12] mb-3">
+            <h3 className="text-xl font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent font-headingFont leading-tight mb-3">
               Andheri
             </h3>
-            <p className="text-[#5c3b2a] leading-relaxed">
+            <p className="text-gray-100 leading-relaxed">
               1201, Lotus Arc One, New Link Road, <br />
               Opp. Tanishq Showroom, Andheri West, <br />
               Mumbai – 400013
@@ -56,12 +56,12 @@ function ContactForm() {
           {/* Mulund */}
           <div
             data-aos="fade-right"
-            className="border border-[#9A3B12] rounded-2xl p-6 bg-transparent"
+            className="border border-secondary-color rounded-2xl p-6 bg-transparent"
           >
-            <h3 className="text-xl font-semibold text-[#9A3B12] mb-3">
+            <h3 className="text-xl font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent font-headingFont leading-tight mb-3">
               Mulund
             </h3>
-            <p className="text-[#5c3b2a] leading-relaxed">
+            <p className="text-gray-100 leading-relaxed">
               724, Ecstasy City of Joy, JSD Road, <br />
               Near Station, Mulund West, <br />
               Mumbai – 400080
@@ -71,12 +71,12 @@ function ContactForm() {
           {/* South Mumbai */}
           <div
             data-aos="fade-left"
-            className="border border-[#9A3B12] rounded-2xl p-6 bg-transparent"
+            className="border border-secondary-color rounded-2xl p-6 bg-transparent"
           >
-            <h3 className="text-xl font-semibold text-[#9A3B12] mb-3">
+            <h3 className="text-xl font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent font-headingFont leading-tight mb-3">
               South Mumbai
             </h3>
-            <p className="text-[#5c3b2a] leading-relaxed">
+            <p className="text-gray-100 leading-relaxed">
               102-B, 1st Floor, New Building, <br />
               Shastri Hall, Tardeo Road, Nana Chowk, <br />
               Near Bhatia Hospital, Mumbai – 400007

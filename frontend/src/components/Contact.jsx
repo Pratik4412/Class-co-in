@@ -287,7 +287,7 @@ const Contact = () => {
     const fetchCountryCodes = async () => {
       try {
         const res = await fetch(
-          "https://restcountries.com/v3.1/all?fields=name,idd,flag"
+          "https://restcountries.com/v3.1/all?fields=name,idd,flag",
         );
 
         if (!res.ok) {
@@ -461,7 +461,7 @@ const Contact = () => {
                 }
                 placeholder="Code"
                 isSearchable
-                className="w-full md:w-[260px]"
+                className="w-full md:w-[260px] "
                 classNamePrefix="custom-select"
               />
 

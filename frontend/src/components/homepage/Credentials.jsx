@@ -68,19 +68,19 @@ const Credentials = () => {
   ];
 
   return (
-    <section className="px-5 md:px-10 lg:px-20 py-12 md:py-16 bg-gradient-to-br from-primary-50 via-secondary-50 to-primary-100">
+    <section className="px-5 md:px-10 lg:px-20 py-12 md:py-16 bg-[#281F1C]">
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16 fadeUp">
           <div className="inline-block mb-4">
-            <span className="text-secondary-600 font-semibold text-sm md:text-base uppercase tracking-wider px-4 py-2 bg-secondary-100 rounded-full">
+            <span className="text-secondary-600 font-semibold text-sm md:text-base uppercase tracking-wider px-4 py-2 bg-[#180F0B] rounded-full">
               Recognised • Certified • Trusted
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-800 font-headingFont mb-4">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent font-headingFont leading-tight">
             Our Credentials & Empanelments
           </h2>
-          <p className="text-sm md:text-base text-gray-700 font-paraFont max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-base text-gray-400 font-paraFont max-w-3xl mx-auto leading-relaxed">
             CLASS & Co. LLP holds key empanelments and certifications that
             reflect its professional standing and regulatory credibility.
           </p>
@@ -95,7 +95,7 @@ const Credentials = () => {
                 key={index}
                 className={`
                   group relative
-                  bg-white rounded-xl p-6 md:p-8
+                  bg-[#180F0B] rounded-xl p-6 md:p-8
                   border-2 border-transparent
                   hover:border-secondary-400
                   hover:shadow-[0_8px_30px_rgba(202,179,108,0.25)]
@@ -124,13 +124,13 @@ const Credentials = () => {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl md:text-2xl font-bold text-primary-800 font-headingFont mb-2">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-100 font-headingFont mb-2">
                   {credential.title}
                 </h3>
-                <p className="text-gray-700 font-paraFont mb-1 text-sm md:text-base">
+                <p className="text-gray-400 font-paraFont mb-1 text-sm md:text-base">
                   {credential.description}
                 </p>
-                <p className="text-secondary-600 font-semibold text-xs md:text-sm">
+                <p className="text-secondary-300 font-semibold text-xs md:text-sm">
                   {credential.detail}
                 </p>
 
@@ -143,10 +143,10 @@ const Credentials = () => {
 
         {/* Bottom Badge */}
         <div className="text-center fadeUp fadeUpDelay3">
-          <div className="inline-block bg-white rounded-2xl px-8 py-6 shadow-lg border border-primary-200">
+          <div className="inline-block bg-[#180F0B] rounded-2xl px-8 py-6 shadow-lg border border-primary-200">
             <div className="flex items-center justify-center gap-3 flex-wrap">
-              <FaCheckCircle className="text-secondary-600 text-2xl" />
-              <p className="text-primary-800 font-semibold text-base md:text-lg font-paraFont">
+              <FaCheckCircle className="text-secondary-300 text-2xl" />
+              <p className="text-gray-200 font-semibold text-base md:text-lg font-paraFont">
                 Enabling complex and regulated assignments across sectors
               </p>
             </div>

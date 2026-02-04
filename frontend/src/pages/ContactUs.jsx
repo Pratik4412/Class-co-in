@@ -30,7 +30,7 @@ const ContactUs = () => {
       <ContactForm />
 
       {/* Google Map Section */}
-      <MapSection />
+      {/* <MapSection /> */}
     </div>
   );
 };

@@ -34,7 +34,7 @@ const OurExprtise = () => {
     return () => observer.disconnect();
   }, []);
   return (
-    <section className="bg-primary-50 py-20 overflow-hidden" ref={sectionRef}>
+    <section className="bg-[#281F1C] py-20 overflow-hidden" ref={sectionRef}>
       <div className="container mx-auto px-5 md:px-10 lg:px-20 flex flex-col md:flex-row items-center gap-16">
         {/* LEFT CONTENT */}
         <div
@@ -42,12 +42,13 @@ const OurExprtise = () => {
           data-aos-duration="800"
           className="w-full md:w-[35%] flex flex-col gap-8 text-center md:text-left"
         >
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-primary-800 leading-tight font-headingFont">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent font-headingFont leading-tight">
+            {" "}
             Our Expertise In <br className="hidden md:block" /> Different
             Domains
-          </h1>
+          </h2>
 
-          <p className="text-sm md:text-base font-paraFont text-gray-700 leading-relaxed">
+          <p className="text-sm md:text-base font-paraFont text-gray-300 leading-relaxed">
             Our expertise spans across diverse industries, enabling us to
             deliver practical, compliant, and future-ready solutions tailored to
             each client’s unique business environment.
@@ -55,25 +56,25 @@ const OurExprtise = () => {
 
           {/* STATS */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-            <div className="bg-white rounded-xl p-4 shadow-sm">
-              <h3 className="text-xl font-semibold text-primary-700">
+            <div className="bg-[#180F0B] rounded-xl p-4 shadow-sm">
+              <h3 className="text-xl font-semibold text-primary-100">
                 {years}+
               </h3>
-              <p className="text-sm text-gray-600">Years Experience</p>
+              <p className="text-sm text-gray-300">Years Experience</p>
             </div>
 
-            <div className="bg-white rounded-xl p-4 shadow-sm">
-              <h3 className="text-xl font-semibold text-primary-700">
+            <div className="bg-[#180F0B] rounded-xl p-4 shadow-sm">
+              <h3 className="text-xl font-semibold text-primary-100">
                 {industries}+
               </h3>
-              <p className="text-sm text-gray-600">Industries</p>
+              <p className="text-sm text-gray-300">Industries</p>
             </div>
 
-            <div className="bg-white rounded-xl p-4 shadow-sm">
-              <h3 className="text-xl font-semibold text-primary-700">
+            <div className="bg-[#180F0B] rounded-xl p-4 shadow-sm">
+              <h3 className="text-xl font-semibold text-primary-100">
                 {engagements}+
               </h3>
-              <p className="text-sm text-gray-600">Engagements</p>
+              <p className="text-sm text-gray-300">Engagements</p>
             </div>
           </div>
         </div>
@@ -87,16 +88,16 @@ const OurExprtise = () => {
               data-aos-delay="100"
               className="
                   w-full sm:w-[460px]
-                  bg-white rounded-xl p-6
+                  bg-[#180F0B] rounded-xl p-6
                   shadow-md hover:shadow-2xl
                   transition-all duration-500
                   hover:-translate-y-2
                 "
             >
-              <h2 className="text-xl font-headingFont font-semibold text-primary-800">
+              <h2 className="text-xl font-headingFont font-semibold text-primary-200">
                 Convenience & Accessibility
               </h2>
-              <p className="text-base font-paraFont text-gray-700 mt-1">
+              <p className="text-base font-paraFont text-gray-300 mt-1">
                 Seamless access to expert solutions aligned with your
                 operational and compliance needs.
               </p>
@@ -110,7 +111,7 @@ const OurExprtise = () => {
               data-aos-delay="200"
               className="
                   w-full sm:w-[460px]
-                  bg-primary-color text-white rounded-xl p-6
+                  bg-primary-800 text-white rounded-xl p-6
                   shadow-md hover:shadow-2xl
                   transition-all duration-500
                   hover:-translate-y-2
@@ -133,16 +134,16 @@ const OurExprtise = () => {
               data-aos-delay="300"
               className="
                   w-full sm:w-[460px]
-                  bg-white rounded-xl p-6
+                  bg-[#180F0B] rounded-xl p-6
                   shadow-md hover:shadow-2xl
                   transition-all duration-500
                   hover:-translate-y-2
                 "
             >
-              <h2 className="text-xl font-headingFont font-semibold text-primary-800">
+              <h2 className="text-xl font-headingFont font-semibold text-primary-200">
                 Quality & Precision
               </h2>
-              <p className="text-base font-paraFont text-gray-700 mt-1">
+              <p className="text-base font-paraFont text-gray-300 mt-1">
                 High standards of accuracy, compliance, and professional
                 excellence in every engagement.
               </p>
@@ -156,7 +157,7 @@ const OurExprtise = () => {
               data-aos-delay="400"
               className="
                   w-full sm:w-[460px]
-                  bg-primary-color text-white rounded-xl p-6
+                  bg-primary-800 text-white rounded-xl p-6
                   shadow-md hover:shadow-2xl
                   transition-all duration-500
                   hover:-translate-y-2

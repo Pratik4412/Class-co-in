@@ -17,13 +17,13 @@ const TeamSize = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-12 ">
+    <div className="flex flex-col gap-12">
       {/* Heading */}
       <div className="w-full flex items-center gap-2 flex-col text-center">
-        <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-[#01254A] font-headingFont">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent font-headingFont leading-tight">
           Our Team
         </h1>
-        <p className="text-lg font-paraFont text-gray-600">
+        <p className="text-lg font-paraFont text-gray-300">
           Meet the leaders who drive our firm with experience & integrity
         </p>
       </div>
@@ -45,7 +45,7 @@ const TeamSize = () => {
               <div
                 data-aos="fade-up"
                 data-aos-delay={i * 100}
-                className="bg-white h-full rounded-xl shadow-md overflow-hidden"
+                className="bg-[#180F0B] h-full rounded-xl shadow-md overflow-hidden"
               >
                 <div className="w-full h-[300px] object-cover object-top justify-center flex items-center">
                   <img
@@ -89,18 +89,18 @@ const TeamSize = () => {
             key={i}
             data-aos="fade-up"
             data-aos-delay={i * 120}
-            className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300"
+            className="bg-[#180F0B] rounded-xl shadow-md overflow-hidden transition-all duration-300 py-6"
           >
-            <div className="w-full h-[300px] object-cover object-top justify-center flex items-center">
+            <div className="w-full object-cover object-top justify-center flex items-center">
               <img
                 src={team.image}
                 alt={team.name}
-                className="w-[200px] h-[250px] object-cover "
+                className="w-[150px] h-[150px] object-cover rounded-full object-left-top"
               />
             </div>
 
             <div className="p-6 flex flex-col gap-2">
-              <h3 className="text-lg font-semibold text-[#01254A] font-headingFont">
+              <h3 className="text-lg font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent font-headingFont leading-tight">
                 {team.name}
               </h3>
 
@@ -108,7 +108,7 @@ const TeamSize = () => {
                 {team.designation}
               </h6>
 
-              <p className="text-sm text-gray-600 font-paraFont leading-relaxed">
+              <p className="text-sm text-gray-300 font-paraFont leading-relaxed">
                 {team.description}
               </p>
             </div>

@@ -169,27 +169,32 @@ body {
 .input {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--secondary-color);
     border-radius: 10px;
     transition: all 0.3s ease;
+    background: #180F0B;
 }
 
 .input:focus {
     outline: none;
-    border-color: #9a3b12;
+    border-color: var(--primary-color);
     box-shadow: 0 0 0 2px rgba(154, 59, 18, 0.2);
 }
 
+.custom-select__single-value {
+    color: #9ca3af !important;
+}
+
 .custom-select__control {
-    border: 1px solid #ddd !important;
+    border: 1px solid var(--secondary-color) !important;
     border-radius: 10px !important;
-    /* min-height: 48px; */
+    background: #180F0B !important;
     padding: 6px;
     transition: all 0.3s ease;
 }
 
 .custom-select__control--is-focused {
-    border-color: #9a3b12 !important;
+    border-color: var(--primary-color) !important;
     box-shadow: 0 0 0 2px rgba(154, 59, 18, 0.2) !important;
 }
 

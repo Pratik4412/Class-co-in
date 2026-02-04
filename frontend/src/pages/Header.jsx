@@ -21,23 +21,13 @@ const Header = () => {
   }, []);
 
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all shadow-lg duration-300
-        ${
-          scrolled
-            ? "bg-[#8a5b47] shadow-md py-2"
-            : "bg-[rgba(0,0,0,0.1)] py-4 "
-        }
-      `}
-    >
+    <header className="fixed top-0 left-0 w-full z-50 transition-all shadow-lg duration-300 bg-[#8a5b47] py-2">
       <div className="container mx-auto px-5 md:px-10 lg:px-20 flex items-center justify-between">
         {/* LOGO */}
         <img
           src={logo}
           alt="Logo"
-          className={`w-[200px] transition-all duration-300 ${
-            scrolled ? "brightness-100" : "brightness-0 invert"
-          }`}
+          className="w-[200px] transition-all duration-300"
         />
 
         {/* DESKTOP MENU */}
