@@ -37,7 +37,7 @@ const OurPromise = () => {
             className=" text-center md:text-start text-sm md:text-base font-gray-600 font-paraFont text-gray-300"
           >
             With over two decades of professional experience, he has played a
-            pivotal role in shaping CLASS & Co. LLP into a trusted and
+            pivotal role in shaping C L A S S & Co. LLP into a trusted and
             well-recognised professional institution. His leadership philosophy
             is rooted in integrity, collective growth, and long-term value
             creation for clients and teams alike.

@@ -81,7 +81,7 @@ const Credentials = () => {
             Our Credentials & Empanelments
           </h2>
           <p className="text-sm md:text-base text-gray-400 font-paraFont max-w-3xl mx-auto leading-relaxed mt-2">
-            CLASS & Co. LLP holds key empanelments and certifications that
+            C L A S S & Co. LLP holds key empanelments and certifications that
             reflect its professional standing and regulatory credibility.
           </p>
         </div>

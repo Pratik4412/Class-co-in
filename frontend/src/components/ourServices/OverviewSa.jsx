@@ -125,7 +125,7 @@ const OverviewSa = () => {
             Under One Roof
           </h2>
           <p className="mt-3 md:mt-4 max-w-3xl mx-auto text-sm md:text-base text-gray-300 font-paraFont leading-relaxed">
-            CLASS & Co. LLP offers an integrated range of professional services
+            C L A S S & Co. LLP offers an integrated range of professional services
             designed to support businesses, institutions, and individuals across
             statutory compliance, advisory, and financial management functions.
           </p>

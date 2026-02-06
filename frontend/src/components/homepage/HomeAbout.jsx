@@ -127,7 +127,7 @@ const HomeAbout = () => {
             data-aos-delay="300"
             className="text-sm md:text-base font-paraFont text-gray-300 leading-relaxed"
           >
-            Established in 1984, CLASS & Co. LLP is a Mumbai-based firm of
+            Established in 1984, C L A S S & Co. LLP is a Mumbai-based firm of
             Chartered Accountants offering a wide range of professional services
             including audit & assurance, direct and indirect taxation, corporate
             finance, insolvency advisory, and regulatory compliance. Over the
