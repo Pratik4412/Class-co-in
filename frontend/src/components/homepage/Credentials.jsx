@@ -80,7 +80,7 @@ const Credentials = () => {
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent font-headingFont leading-tight">
             Our Credentials & Empanelments
           </h2>
-          <p className="text-sm md:text-base text-gray-400 font-paraFont max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-base text-gray-400 font-paraFont max-w-3xl mx-auto leading-relaxed mt-2">
             CLASS & Co. LLP holds key empanelments and certifications that
             reflect its professional standing and regulatory credibility.
           </p>

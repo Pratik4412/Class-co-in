@@ -114,11 +114,11 @@ const OverviewSa = () => {
       <div className="container mx-auto px-4 sm:px-6 md:px-10 lg:px-20">
         {/* Heading */}
         <div className="text-center mb-10 md:mb-14 fadeUp">
-          <div className="inline-block mb-4">
+          {/* <div className="inline-block mb-4">
             <span className="text-secondary-600 font-semibold text-xs md:text-sm uppercase tracking-wider px-4 py-2 bg-white rounded-full shadow-sm">
               Our Services
             </span>
-          </div>
+          </div> */}
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent font-headingFont leading-tight">
             Comprehensive Professional Solutions
             <br className="hidden md:block" />
@@ -235,11 +235,11 @@ const OverviewSa = () => {
                 className="w-full h-[250px] md:h-[400px] lg:h-full object-cover object-center"
               />
               {/* Overlay Badge */}
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary-900/90 to-transparent p-6">
+              {/* <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary-900/90 to-transparent p-6">
                 <p className="text-black font-semibold text-sm md:text-base font-paraFont">
                   Expert guidance tailored to your needs
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

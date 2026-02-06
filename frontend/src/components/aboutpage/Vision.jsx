@@ -22,7 +22,7 @@ const Vision = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="400"
-              className="text-center md:text-start text-md md:text-xl font-gray-600 font-paraFont text-gray-300"
+              className="text-center md:text-start text-md md:text-lg font-gray-600 font-paraFont text-gray-300"
             >
               The foundation of C L A S S & Co. LLP is built on purpose,
               principles, and professional excellence

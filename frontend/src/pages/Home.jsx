@@ -30,13 +30,30 @@ const Home = () => {
                 Chartered Accountants | Consultants | Advisors
               </h6>
             </div>
-            <div>
+            <div className="flex items-center gap-3 ">
               <button
                 className="btn-button "
                 onClick={() => navigate("/services")}
               >
                 Explore Our Services
               </button>
+              <a
+                href="https://drive.google.com/file/d/1T37F1muX6QEWJq1Ly22seZikDMKDDmcI/view"
+                target="_blank"
+                className="
+    text-secondary-200
+    border border-secondary-color
+    py-2 px-6 text-xl rounded-lg
+
+    transition-all duration-[400ms] ease-in-out
+
+    hover:text-white
+    hover:shadow-xl
+    hover:-translate-y-1
+  "
+              >
+                Download our E-brochure
+              </a>
             </div>
           </div>
         </div>

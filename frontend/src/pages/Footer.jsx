@@ -165,18 +165,57 @@ const Footer = () => {
               <h3 className="text-lg font-headingFont font-semibold text-secondary-color">
                 Other
               </h3>
+
               <ul className="flex flex-col gap-2 text-sm">
-                {[
-                  { name: "Privacy Policy", path: "/privacy-policy" },
-                  { name: "Terms & Conditions", path: "/terms-of-service" },
-                  { name: "Legal Disclaimer", path: "/legal-disclaimer" },
-                ].map((item, i) => (
-                  <Link key={i} to={item.path}>
-                    <li className="text-white/80 hover:text-secondary-color transition">
-                      {item.name}
-                    </li>
+                {/* View brochure */}
+                {/* <li>
+                  <a
+                    href="https://drive.google.com/file/d/1T37F1muX6QEWJq1Ly22seZikDMKDDmcI/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/80 hover:text-secondary-color transition"
+                  >
+                    View our E-brochure
+                  </a>
+                </li> */}
+
+                {/* Download brochure */}
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1T37F1muX6QEWJq1Ly22seZikDMKDDmcI/view"
+                    className="text-white/80 hover:text-secondary-color transition"
+                  >
+                    Download our E-brochure (PDF)
+                  </a>
+                </li>
+
+                {/* Other legal links */}
+                <li>
+                  <Link
+                    to="/privacy-policy"
+                    className="text-white/80 hover:text-secondary-color transition"
+                  >
+                    Privacy Policy
                   </Link>
-                ))}
+                </li>
+
+                <li>
+                  <Link
+                    to="/terms-of-service"
+                    className="text-white/80 hover:text-secondary-color transition"
+                  >
+                    Terms & Conditions
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    to="/legal-disclaimer"
+                    className="text-white/80 hover:text-secondary-color transition"
+                  >
+                    Legal Disclaimer
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -193,7 +232,7 @@ const Footer = () => {
           </div>
 
           <div className="socialIcons flex gap-2">
-            <div className="bg-primary-800 cursor-pointer p-1.5 rounded-full flex items-center justify-center">
+            {/* <div className="bg-primary-800 cursor-pointer p-1.5 rounded-full flex items-center justify-center">
               <CgFacebook className="text-white size-5" />
             </div>
             <div className="bg-primary-800 cursor-pointer p-1.5 rounded-full flex items-center justify-center">
@@ -201,13 +240,13 @@ const Footer = () => {
             </div>
             <div className="bg-primary-800 cursor-pointer p-1.5 rounded-full flex items-center justify-center">
               <BiLogoInstagramAlt className="text-white size-5" />
-            </div>
+            </div> */}
             <div className="bg-primary-800 cursor-pointer p-1.5 rounded-full flex items-center justify-center">
               <FaLinkedinIn className="text-white size-5" />
             </div>
-            <div className="bg-primary-800 cursor-pointer p-1.5 rounded-full flex items-center justify-center">
+            {/* <div className="bg-primary-800 cursor-pointer p-1.5 rounded-full flex items-center justify-center">
               <FaXTwitter className="text-white size-5" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

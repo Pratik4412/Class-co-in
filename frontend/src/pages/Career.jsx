@@ -1,4 +1,3 @@
-
 import React, { useState, useRef } from "react";
 import toast from "react-hot-toast";
 import { sendCareerApplication } from "../api/careerApi";
@@ -62,7 +61,7 @@ const Career = () => {
       }
     } catch (err) {
       toast.error(
-        err?.response?.data?.message || "Submission failed. Please try again."
+        err?.response?.data?.message || "Submission failed. Please try again.",
       );
     } finally {
       setLoading(false);
@@ -123,19 +122,19 @@ const Career = () => {
           ].map((item, i) => (
             <div
               key={i}
-              className="p-6 bg-white rounded-xl border hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              className="p-6 bg-[#281F1C] rounded-xl  hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             >
-              <h4 className="text-lg font-semibold text-[#9A3B12] mb-2">
+              <h4 className="text-lg font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent font-headingFont leading-tight mb-2">
                 {item.title}
               </h4>
-              <p className="text-gray-600">{item.desc}</p>
+              <p className="text-gray-200">{item.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* ================= HIRING PROCESS ================= */}
-      <section className="bg-[#f7f4ee] py-8 md:py-12">
+      <section className="bg-[#281F1C] py-8 md:py-12">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-semibold text-center text-[#9A3B12] mb-12">
             Our Hiring Process
@@ -150,12 +149,12 @@ const Career = () => {
             ].map((step, i) => (
               <div
                 key={i}
-                className="bg-white p-6 rounded-xl text-center shadow hover:shadow-lg transition"
+                className="bg-[#180F0B] p-6 rounded-xl text-center shadow hover:shadow-lg transition"
               >
                 <div className="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-[#9A3B12] text-white font-bold">
                   {i + 1}
                 </div>
-                <p className="font-medium">{step}</p>
+                <p className="font-medium text-gray-200">{step}</p>
               </div>
             ))}
           </div>
@@ -164,20 +163,20 @@ const Career = () => {
 
       {/* ================= FORM ================= */}
       <section id="career-form" className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-start w-full">
+        <div className="w-full flex items-center justify-center">
           {/* INFO */}
-          <div className="w-full">
-            <h3 className="text-3xl font-semibold text-[#9A3B12]">
-              Submit Your Profile
-            </h3>
-            <p className="text-gray-300 mt-2">
-              Even if there are no current openings, we keep profiles for future
-              opportunities.
-            </p>
-          </div>
 
           {/* FORM */}
-          <div className="!w-full bg-white shadow-xl p-6 rounded-xl animate-fadeUp">
+          <div className=" bg-[#180F0B] shadow-xl lg:p-6 rounded-xl animate-fadeUp max-w-2xl">
+            <div className="">
+              <h3 className="text-3xl font-semibold text-[#9A3B12]">
+                Submit Your Profile
+              </h3>
+              <p className="text-gray-300 mt-2 mb-3">
+                Even if there are no current openings, we keep profiles for
+                future opportunities.
+              </p>
+            </div>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
               <input
                 type="text"

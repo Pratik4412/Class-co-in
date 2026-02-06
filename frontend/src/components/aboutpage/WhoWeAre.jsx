@@ -38,8 +38,10 @@ const WhoWeAre = () => {
       <div className="container mx-auto px-5 md:px-10 lg:px-20 flex flex-col gap-8">
         <div className="md:relative flex flex-col gap-4">
           <div className="flex md:items-start flex-col md:flex-row text-start gap-5 md:gap-10 ">
-            <img src={whoAre} alt="whoAre" className="rounded-2xl" />
-            <div className="flex flex-col gap-6 py-5">
+            <div className="w-1/2 flex items-center lg:justify-end justify-center">
+              <img src={whoAre} alt="whoAre" className="rounded-2xl h-[500px]" />
+            </div>
+            <div className="flex flex-col gap-6 py-5 w-1/2">
               <h1
                 data-aos="fade-up"
                 data-aos-duration="400"
@@ -52,12 +54,28 @@ const WhoWeAre = () => {
                 data-aos-duration="400"
                 className="text-center md:text-start text-sm md:text-base font-paraFont text-gray-300"
               >
-                C L A S S & Co. LLP is a multi-disciplinary Chartered
+                {/* C L A S S & Co. LLP is a multi-disciplinary Chartered
                 Accountancy firm offering audit, taxation, regulatory
                 compliance, and advisory services. We work closely with
                 businesses to provide practical, transparent, and value-driven
                 solutions tailored to evolving regulatory and commercial
-                environments.
+                environments. */}
+                M/s C L A S S & Co. LLP (Previously known as M/s. M/s C L A S S
+                & Co. LLP (Previously known as M/s. Chaturvedi & Agrawal estd
+                1984), Chartered Accountants, Chaturvedi & Agrawal estd 1984),
+                Chartered Accountants, is a well-established compliance and
+                consulting firm is a well-established compliance and consulting
+                firm rendering comprehensive professional services including
+                rendering comprehensive professional services including
+                Accountancy, Independent Audit & Assurance, US GAAP Accountancy,
+                Independent Audit & Assurance, US GAAP Restatement, Foreign
+                Exchange and Regulatory Restatement, Foreign Exchange and
+                Regulatory Consulting, Restructuring and Valuations, Corporate
+                Consulting, Restructuring and Valuations, Corporate Support,
+                Legal and Secretarial Support, Management Support, Legal and
+                Secretarial Support, Management Consulting, all sorts of tax
+                consultancy, compliances of Consulting, all sorts of tax
+                consultancy, compliances of SEBI & Stock Exchanges etc.
               </p>
             </div>
           </div>
@@ -96,11 +114,11 @@ const WhoWeAre = () => {
             <div className="bg-gray-200 w-full md:w-[2px] h-[1px] md:h-[80px]"></div>
             <div className="w-full md:w-fit flex flex-col gap-2">
               <h1 className=" text-center md:text-start text-xl md:text-2xl font-semibold text-white">
-                We put our customers at the <br /> heart of everything we do.
+                We put our customers at the <br /> heart of everything we do
               </h1>
-              <p className=" text-center md:text-start text-base font-paraFont text-gray-300">
+              {/* <p className=" text-center md:text-start text-base font-paraFont text-gray-300">
                 Satisfied Users Over The Globe
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
