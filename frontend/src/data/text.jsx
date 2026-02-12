@@ -223,7 +223,7 @@ export const servicesTabs = [
   {
     id: "direct-taxation",
     title: "Direct Taxation",
-    category: "Taxation Services",
+    // category: "Taxation Services",
     overview:
       "We provide end-to-end direct tax advisory and compliance services covering planning, filing, assessments, and representation.",
     services: [
@@ -239,7 +239,7 @@ export const servicesTabs = [
   {
     id: "indirect-taxation",
     title: "Indirect Taxation (GST)",
-    category: "Taxation Services",
+    // category: "Taxation Services",
     overview:
       "Our GST services support businesses in managing indirect tax obligations efficiently while ensuring regulatory compliance.",
     services: [

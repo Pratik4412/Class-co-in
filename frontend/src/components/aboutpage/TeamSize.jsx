@@ -47,15 +47,21 @@ const TeamSize = () => {
                 data-aos-delay={i * 100}
                 className="bg-[#180F0B] h-full rounded-xl shadow-md overflow-hidden"
               >
-                <div className="w-full h-[300px] bg-white object-top justify-center flex items-center">
+                {/* <div className="w-full h-[300px] bg-white object-top justify-center flex items-center">
                   <img
                     src={team.image}
                     alt={team.name}
                     className="w-[200px] h-[250px] object-scale-down bg-white"
                   />
+                </div> */}
+                <div className="w-full object-top justify-center flex items-center">
+                  <img
+                    src={team.image}
+                    alt={team.name}
+                    className="w-[150px] h-[150px] object-contain rounded-full"
+                  />
                 </div>
-
-                <div className="p-5 flex flex-col gap-2">
+                <div className="p-5 flex flex-col gap-2 text-center">
                   <h3 className="text-base md:text-lg font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent font-headingFont leading-tight">
                     {team.name}
                   </h3>

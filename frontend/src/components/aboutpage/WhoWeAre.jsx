@@ -58,12 +58,6 @@ const WhoWeAre = () => {
                 data-aos-duration="400"
                 className="text-center md:text-start text-sm md:text-base font-paraFont text-gray-300"
               >
-                {/* C L A S S & Co. LLP is a multi-disciplinary Chartered
-                Accountancy firm offering audit, taxation, regulatory
-                compliance, and advisory services. We work closely with
-                businesses to provide practical, transparent, and value-driven
-                solutions tailored to evolving regulatory and commercial
-                environments. */}
                 M/s C L A S S & Co. LLP (Previously known as M/s. Chaturvedi &
                 Agrawal estd 1984), Chartered Accountants, is a well-established
                 compliance and consulting firm rendering comprehensive
@@ -80,9 +74,7 @@ const WhoWeAre = () => {
               >
                 C L A S S & Co. LLP believes in providing Chartered Accounting
                 Services through a motivated workforce, client retention, high
-                integrity, dedication, sincerity, and professionalism. The firm
-                is headquartered in Mumbai with a spacious office in Kandivali
-                East and follows a modern, risk-based audit approach.
+                integrity, dedication, sincerity, and professionalism.
               </p>
             </div>
           </div>
@@ -121,7 +113,7 @@ const WhoWeAre = () => {
             <div className="bg-gray-200 w-full md:w-[2px] h-[1px] md:h-[80px]"></div>
             <div className="w-full md:w-fit flex flex-col gap-2">
               <h1 className=" text-center md:text-start text-xl md:text-2xl font-semibold text-white">
-                We put our customers at the <br /> heart of everything we do
+                We put our clients at the <br /> heart of everything we do
               </h1>
               {/* <p className=" text-center md:text-start text-base font-paraFont text-gray-300">
                 Satisfied Users Over The Globe

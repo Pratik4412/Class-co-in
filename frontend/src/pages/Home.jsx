@@ -30,7 +30,7 @@ const Home = () => {
                 Chartered Accountants | Consultants | Advisors
               </h6>
             </div>
-            <div className="flex items-center flex-col lg:flex-row gap-3 ">
+            <div className="flex items-center flex-col lg:flex-row lg:gap-3 gap-6">
               <button
                 className="btn-button "
                 onClick={() => navigate("/services")}

@@ -165,13 +165,13 @@ const OverviewSa = () => {
             fadeUp fadeUpDelay3"
           >
             {/* Category Badge (if exists) */}
-            {servicesTabs[activeTab].category && (
-              <div className="mb-3">
-                <span className="inline-block text-xs font-semibold text-secondary-700 bg-secondary-100 px-3 py-1 rounded-full">
-                  {servicesTabs[activeTab].category}
-                </span>
-              </div>
-            )}
+              {/* {servicesTabs[activeTab].category && (
+                <div className="mb-3">
+                  <span className="inline-block text-xs font-semibold text-secondary-700 bg-secondary-100 px-3 py-1 rounded-full">
+                    {servicesTabs[activeTab].category}
+                  </span>
+                </div>
+              )} */}
 
             {/* Title */}
             <h3 className="text-xl md:text-2xl lg:text-3xl font-bold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent leading-tight mb-4 font-headingFont">

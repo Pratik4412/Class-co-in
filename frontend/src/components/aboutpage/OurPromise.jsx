@@ -4,8 +4,12 @@ const OurPromise = () => {
   return (
     <div className="container mx-auto px-5 md:px-10 lg:px-20">
       <div className="flex text-start md:items-center gap-6 md:gap-10 flex-col md:flex-row justify-center">
-        <div className="lg:w-1/2 flex items-center justify-center">
-          <img src={ourPromi} alt="" className="md:h-[300px] rounded-2xl" />
+        <div className=" flex items-center justify-center w-full lg:w-1/2">
+          <img
+            src={ourPromi}
+            alt=""
+            className="w-1/2  md:h-[300px] rounded-2xl"
+          />
         </div>
         <div className="w-full md:w-1/2 flex flex-col gap-6">
           <h1
