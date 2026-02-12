@@ -38,10 +38,14 @@ const WhoWeAre = () => {
       <div className="container mx-auto px-5 md:px-10 lg:px-20 flex flex-col gap-8">
         <div className="md:relative flex flex-col gap-4">
           <div className="flex md:items-start flex-col md:flex-row text-start gap-5 md:gap-10 ">
-            <div className="w-1/2 flex items-center lg:justify-end justify-center">
-              <img src={whoAre} alt="whoAre" className="rounded-2xl h-[500px]" />
+            <div className="lg:w-1/2 flex items-center lg:justify-end justify-center">
+              <img
+                src={whoAre}
+                alt="whoAre"
+                className="rounded-2xl h-full lg:h-[500px]"
+              />
             </div>
-            <div className="flex flex-col gap-6 py-5 w-1/2">
+            <div className="flex flex-col gap-6 py-5 lg:w-1/2">
               <h1
                 data-aos="fade-up"
                 data-aos-duration="400"
@@ -60,22 +64,25 @@ const WhoWeAre = () => {
                 businesses to provide practical, transparent, and value-driven
                 solutions tailored to evolving regulatory and commercial
                 environments. */}
-                M/s C L A S S & Co. LLP (Previously known as M/s. M/s C L A S S
-                & Co. LLP (Previously known as M/s. Chaturvedi & Agrawal estd
-                1984), Chartered Accountants, Chaturvedi & Agrawal estd 1984),
-                Chartered Accountants, is a well-established compliance and
-                consulting firm is a well-established compliance and consulting
-                firm rendering comprehensive professional services including
-                rendering comprehensive professional services including
-                Accountancy, Independent Audit & Assurance, US GAAP Accountancy,
-                Independent Audit & Assurance, US GAAP Restatement, Foreign
-                Exchange and Regulatory Restatement, Foreign Exchange and
-                Regulatory Consulting, Restructuring and Valuations, Corporate
+                M/s C L A S S & Co. LLP (Previously known as M/s. Chaturvedi &
+                Agrawal estd 1984), Chartered Accountants, is a well-established
+                compliance and consulting firm rendering comprehensive
+                professional services including Accountancy, Independent Audit &
+                Assurance, US GAAP Restatement, Foreign Exchange and Regulatory
                 Consulting, Restructuring and Valuations, Corporate Support,
-                Legal and Secretarial Support, Management Support, Legal and
-                Secretarial Support, Management Consulting, all sorts of tax
-                consultancy, compliances of Consulting, all sorts of tax
-                consultancy, compliances of SEBI & Stock Exchanges etc.
+                Legal and Secretarial Support, Management Consulting, all sorts
+                of tax consultancy, compliances of SEBI & Stock Exchanges etc,.
+              </p>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="400"
+                className="text-center md:text-start text-sm md:text-base font-paraFont text-gray-300"
+              >
+                C L A S S & Co. LLP believes in providing Chartered Accounting
+                Services through a motivated workforce, client retention, high
+                integrity, dedication, sincerity, and professionalism. The firm
+                is headquartered in Mumbai with a spacious office in Kandivali
+                East and follows a modern, risk-based audit approach.
               </p>
             </div>
           </div>

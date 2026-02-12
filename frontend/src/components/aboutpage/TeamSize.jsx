@@ -56,7 +56,7 @@ const TeamSize = () => {
                 </div>
 
                 <div className="p-5 flex flex-col gap-2">
-                  <h3 className="text-base md:text-lg font-semibold text-[#01254A] font-headingFont">
+                  <h3 className="text-base md:text-lg font-semibold bg-[linear-gradient(105.17deg,_#251611_-25.01%,_#FFCA97_42.41%,_#251611_121.11%)] bg-clip-text text-transparent font-headingFont leading-tight">
                     {team.name}
                   </h3>
 
@@ -64,7 +64,7 @@ const TeamSize = () => {
                     {team.designation}
                   </h6>
 
-                  <p className="text-sm text-gray-600 font-paraFont">
+                  <p className="text-sm text-gray-200 font-paraFont">
                     {team.description}
                   </p>
                 </div>
@@ -108,7 +108,7 @@ const TeamSize = () => {
                 {team.designation}
               </h6>
 
-              <p className="text-sm text-gray-300 font-paraFont leading-relaxed">
+              <p className="text-sm text-gray-200 font-paraFont leading-relaxed">
                 {team.description}
               </p>
             </div>
